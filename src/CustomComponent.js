@@ -3,6 +3,9 @@ import team from "./scrumTeam.jpg";
 import manifest from "./Manifesto 1-6.JPG";
 import master from "./scrumMaster.jpg";
 import sBacklog from "./sprint_backlog.jpg";
+import review from "./dailyScrum.jpg";
+import reviewMeeting from "./reviewMeeting.png";
+import increment from "./increment.jpg";
 
 class CustomComponent extends Component {
     constructor(props) {
@@ -82,6 +85,57 @@ class CustomComponent extends Component {
 
                     <h2>Scrum Backlog</h2>
                     <img src={sBacklog} className="CustomComponent-Img" alt=""/>
+                    <h2>Spring Review</h2>
+                    <p>When : at the END of the Sprint - &gt;</p>
+                    <ul>
+                        <ul>
+                            <li>inspect the Increment</li>
+                            <li>adapt Product Backlog</li>
+                        </ul>
+                    </ul>
+
+                    <p>Duration : 4h for one month Sprints</p>
+                    <p>Who:</p>
+                    <ul>
+                        <li>Scrum Team</li>
+                        <li>stakeholders</li>
+                    </ul>
+                    <p>During Sprint Review Meeting</p>
+                    <ul>
+                        <li>Product Owner explains what have been "Done"</li>
+                        <li>Dev Team discuss the experience gained in this Sprint</li>
+                        <li>Dev Teams demonstrates the work</li>
+                        <li>Entire group discusses about what to do next</li>
+                        <li>Review the priority based on changes of marketplace or product function</li>
+                        <li>Review of the timeline, budget, potential capabilities</li>
+                    </ul>
+                    <p>Result :&nbsp;</p>
+                    <ul>
+                        <li>a revised Product Backlog that defines the probable items for next Sprint</li>
+                    </ul>
+                    <img src={reviewMeeting} alt="logo"/>
+
+                    <h2>Daily Scrum</h2>
+                    <ul>
+                        <li>F&ouml;rdern die Kommunikation</li>
+                        <li>Machen andere Meetings &uuml;berfl&uuml;ssig</li>
+                        <li>Identifizieren zu beseitigende Hindernisse</li>
+                        <li>Fokussieren und f&ouml;rdern die schnelle Entscheidungsfindung</li>
+                        <li>Erh&ouml;hen den Wissensstand des Teams</li>
+                        <li>&Uuml;berpr&uuml;fung und Anpassung</li>
+                    </ul>
+                    <img src={review} alt="logo"/>
+
+                    <h3>Increment</h3>
+                    <p>The Increment is the sum of all the Product Backlog items completed during a Sprint and the<br/>value
+                        of the increments of all previous Sprints. At the end of a Sprint, the new Increment
+                        must<br/>be &ldquo;Done,&rdquo; which means it must be in useable condition and meet the Scrum
+                        Team&rsquo;s definition<br/>of &ldquo;Done.&rdquo; An increment is a body of inspectable, done
+                        work that supports empiricism at the<br/>end of the Sprint. The increment is a step toward a
+                        vision or goal. The increment must be in<br/>useable condition regardless of whether the Product
+                        Owner decides to release it.</p>
+
+                    <img src={increment} alt="logo"/>
 
                 </div>
             </div>
