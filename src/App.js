@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import devteamgrafik from './devTeam.png';
 import productownergrafik from './productOwner.png';
@@ -61,7 +60,7 @@ class App extends Component {
           The team agrees on, and displays prominently somewhere in the team room, a list of criteria which must be met before a product increment "often a user story" is considered "done". Failure to meet these criteria at the end of a sprint normally implies that the work should not be counted toward that sprint's velocity.
         </p>
       <p className="berlinercontent">
-      <img src={definitionofdone}/>
+      <img src={definitionofdone} alt="definition of done"/>
       </p>
         
       </div>
