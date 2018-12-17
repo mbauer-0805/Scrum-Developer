@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import team from "./scrumTeam.jpg";
+import manifest from "./Manifesto 1-6.JPG";
 import master from "./scrumMaster.jpg";
-
+import sBacklog from "./sprint_backlog.jpg";
 
 class CustomComponent extends Component {
     constructor(props) {
@@ -76,6 +77,11 @@ class CustomComponent extends Component {
                             in der Organisation zu steigern.
                         </li>
                     </ul>
+                    <h2>Manifesto 1-6</h2>
+                    <img src={manifest} className="CustomComponent-Img" alt=""/>
+
+                    <h2>Scrum Backlog</h2>
+                    <img src={sBacklog} className="CustomComponent-Img" alt=""/>
 
                 </div>
             </div>
