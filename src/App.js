@@ -6,6 +6,7 @@ import productownergrafik from './productOwner.png';
 import berlingrafik from './berlin.png';
 import manifestografik from './manifesto.jpg';
 import productBackloggrafik from './productBacklog.jpg';
+import definitionofdone from './definitionOfDone.jpg'
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
         <p className="berlinercontent">
           <h2>Manifest 7 - 12</h2>
           <img src={manifestografik} alt="manifesto bild" />
+          
         </p>
 
         <p className="berlinercontent">
@@ -36,10 +38,10 @@ class App extends Component {
           <img src={productBackloggrafik} alt="productbacklog bild" />
         </p>
 
-        <div className="ProductBacklogText">
-        <h2>Product Backlog</h2>
+        <div className="contentleft">
+        <h2 className="berlinercontent">Product Backlog</h2>
         <ul>
-          <li>single source of requirements for any changes to be made to the product</li>
+          <li>Single source of requirements for any changes to be made to the product</li>
           <li>The Product Owner is responsible including its content, availability, and ordering</li>
           <li>is never complete, it is dynamic -> living artifact</li>
           <li>earliest development of it: initially known and best-understood requirements</li>
@@ -54,6 +56,14 @@ class App extends Component {
         </ul>
         </div>
 
+        <p className="contentleft">
+          <h2 className="berlinercontent">Definition of done</h2>
+          The team agrees on, and displays prominently somewhere in the team room, a list of criteria which must be met before a product increment "often a user story" is considered "done". Failure to meet these criteria at the end of a sprint normally implies that the work should not be counted toward that sprint's velocity.
+        </p>
+      <p className="berlinercontent">
+      <img src={definitionofdone}/>
+      </p>
+        
       </div>
     );
   }
