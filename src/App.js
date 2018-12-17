@@ -4,6 +4,7 @@ import './App.css';
 import devteamgrafik from './devTeam.png';
 import productownergrafik from './productOwner.png';
 import berlingrafik from './berlin.png';
+import manifestografik from './manifesto.jpg';
 
 class App extends Component {
   render() {
@@ -22,6 +23,11 @@ class App extends Component {
         <p className="ProductOwner-intro">
           <h2>Product Owner</h2>
           <img src={productownergrafik} alt="productowner bild" />
+        </p>
+
+        <p className="Manifest-sevenToTwelve">
+          <h2>Manifest 7 - 12</h2>
+          <img src={manifestografik} alt="manifesto bild" />
         </p>
 
       </div>
