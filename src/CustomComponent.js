@@ -14,25 +14,26 @@ class CustomComponent extends Component {
                 <h2>{this.props.title}</h2>
                 <p>{this.props.description}</p>
                 <div className="CustomComponent-div">
-                    <h1>Scrum Team</h1>
+                    <div>
+                        <h1>Scrum Team</h1>
 
-                    <img src={team} className="App-logo" alt="logo"/>
+                        <img src={team} className="Team" alt="logo"/>
 
-                    <p>&nbsp;</p>
-                    <p>self-organizing : not directed by anyone outside&nbsp; the team</p>
-                    <p>cross-functional : have all competencies to accomplish the work</p>
-                    <p>&nbsp;</p>
-                    <p>team model designed to optimize</p>
-                    <ul>
-                        <li>flexibility</li>
-                        <li>creativity</li>
-                        <li>productivity</li>
-                    </ul>
-                    <p>&nbsp;</p>
-                    <p>deliver products&nbsp;<strong>iteratively</strong>&nbsp;and&nbsp;<strong>incrementally,
-                        maximizing feedback</strong></p>
+                        <p>&nbsp;</p>
+                        <p>self-organizing : not directed by anyone outside&nbsp; the team</p>
+                        <p>cross-functional : have all competencies to accomplish the work</p>
+                        <p>&nbsp;</p>
+                        <p>team model designed to optimize</p>
+                        <ul>
+                            <li>flexibility</li>
+                            <li>creativity</li>
+                            <li>productivity</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <p>deliver products&nbsp;<strong>iteratively</strong>&nbsp;and&nbsp;<strong>incrementally,
+                            maximizing feedback</strong></p>
 
-
+                    </div>
                     <h1>Scrum Master</h1>
                     <img src={master} className="App-logo" alt="logo"/>
 

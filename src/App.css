@@ -22,13 +22,17 @@
     font-size: large;
 }
 
-.CustomComponent-div{
-    color: black ;
+.CustomComponent-div {
+    color: black;
     text-align: left;
     list-style: none;
     margin-left: 10%;
     margin-right: 10%;
 
+}
+
+.Team {
+    width: 30%;
 }
 
 /*
