@@ -11,7 +11,7 @@ class App extends Component {
                     <img src={logo} className="App-logo" alt="logo"/>
                 </header>
 
-                <CustomComponent title={"Scrum Master"}/>
+                <CustomComponent/>
             </div>
         );
     }
