@@ -3,9 +3,12 @@ import team from "./huoLongRes/scrumTeam.jpg";
 import manifest from "./huoLongRes/Manifesto 1-6.JPG";
 import master from "./huoLongRes/scrumMaster.jpg";
 import sBacklog from "./huoLongRes/sprint_backlog.jpg";
-import review from "./dailyScrum.jpg";
+import review from "./huoLongRes/dailyScrum.jpg";
 import reviewMeeting from "./huoLongRes/reviewMeeting.png";
 import increment from "./huoLongRes/increment.jpg";
+import epic from "./huoLongRes/epic.png";
+import idealDay from "./huoLongRes/idealDay.jpg";
+import storyCard from "./huoLongRes/Story_Card.png";
 
 class HuoLongComponent extends Component {
     constructor(props) {
@@ -136,6 +139,68 @@ class HuoLongComponent extends Component {
                         Owner decides to release it.</p>
 
                     <img src={increment} className="CustomComponent-Img" alt="logo"/>
+                    <h2>User Stories</h2>
+                    <ul>
+                        <li>Transportiert die W&uuml;nsche des Kunden an ein Softwareprodukt oder an eine
+                            Gesch&auml;ftsl&ouml;sung.
+                        </li>
+                        <li>Beschreibt, wie sich ein Anwender eine Software w&uuml;nscht.</li>
+                        <li>&bdquo;Als &lt;Rolle&gt; m&ouml;chte ich &lt;Ziel/Wunsch&gt;, um &lt;Nutzen&gt;.
+                            <ul>
+                                <li>Als Kunde m&ouml;chte ich mich auf einem bei einem E-Learning Portal registrieren,
+                                    um mich auf eine Zertifizierung vorzubereiten.
+                                </li>
+                                <li>Als IT-Administrator m&ouml;chte ich eine Datenbank verwalten, um Datens&auml;tze
+                                    anzulegen, zu &auml;ndern oder zu l&ouml;schen.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>Epic, User Story und Task</h3>
+                    <img src={epic} className="CustomComponent-Img" alt="logo"/>
+                    <ul>
+                        <li>Epic: H&ouml;chste Abstraktionsstufe, zu gro&szlig; f&uuml;r einen Sprint.</li>
+                        <li>User Story: Enth&auml;lt Anforderungen, Basis f&uuml;r Sch&auml;tzung.</li>
+                        <li>Task: Zerlegte User Story.</li>
+                    </ul>
+                    <h3>Allgemeine Merkmale</h3>
+                    <ul>
+                        <li>Stehen neben Epics und Tasks im Product Backlog.</li>
+                        <li>Kurz, knapp und verst&auml;ndlich. Aus Kundensicht spezifisch und detailliert.&nbsp;</li>
+                        <li>Sie bewegen sich im Anforderungsraum, nicht im L&ouml;sungsraum.</li>
+                        <li>Nicht im Scrum Guide enthalten.</li>
+                    </ul>
+                    <h3>Prägnante User Stories</h3>
+
+                    <ul>
+                        <li>Einfach und pr&auml;gnant f&uuml;r den Anwender als Zielgruppe.</li>
+                        <li>S&auml;tze mit Subjekt, Verb und Objekt konsturieren.</li>
+                        <li>Verwirrende oder Zweideutige Begriffe meiden.</li>
+                    </ul>
+                    <h3> In aussagekräftige User Stories „investieren“ INVEST!</h3>
+                    <ul>
+                        <li>Independent</li>
+                        <li>Negotiable</li>
+                        <li>Valuable</li>
+                        <li>Estimatable</li>
+                        <li>Small</li>
+
+                    </ul>
+                    <h3>Story-Card</h3>
+                    <img src={storyCard} className="CustomComponent-Img" alt="logo"/>
+
+                    <h2>Ideal Day</h2>
+                    <ul>
+                        <li>one developer</li>
+                        <li>in one eight hour day</li>
+                        <li>completely free of interruptions such as drop-ins, phone calls, meetings, etc.</li>
+                    </ul>
+                    <p>NOT the REALITY, calendar days.</p>
+                    <p>Estimating using Ideal Day:</p>
+                    <ul>
+                        <li>each member estimates how many ideal days he need to finish the user story</li>
+                    </ul>
+                    <img src={idealDay} className="CustomComponent-Img" alt="logo"/>
 
                 </div>
             </div>
