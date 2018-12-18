@@ -13,8 +13,9 @@ import contIntegrationBrands from "./huoLongRes/ContiniousIntegration.png";
 import contIntegration from "./huoLongRes/ContiniousIntegration2.png";
 import sprintPlanning from "./huoLongRes/sprint_planning.jpg";
 import branchMerch1 from "./huoLongRes/branchMergeWhole.png";
-import branchMerch2 from "./huoLongRes/branchMergeWhole2.png";
-import branchMerch3 from "./huoLongRes/branchMergeWhole3.png";
+import branchMerch2 from "./huoLongRes/branchMerchWhole2.PNG";
+import branchMerch3 from "./huoLongRes/branchMerchWhole3.PNG";
+
 class HuoLongComponent extends Component {
 
     render() {
@@ -242,8 +243,8 @@ class HuoLongComponent extends Component {
                         <li><strong>A Sprint backlog</strong></li>
                     </ul>
                     </div>
-                    <img src={branchMerch1} className="CustomComponent-Img" alt="logo" />
-
+                    <h2>Branching vs. Merging</h2>
+                        <img src={branchMerch1} className="CustomComponent-Img" alt="logo" />
                     <img src={branchMerch2} className="CustomComponent-Img" alt="logo" />
                     <img src={branchMerch3} className="CustomComponent-Img" alt="logo" />
 
