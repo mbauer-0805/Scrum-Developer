@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import berlingrafik from "./berlinerRes/berlin.png";
 import logo from "./huoLongRes/huoLong.png";
 import devteamgrafik from "./berlinerRes/devTeam.png";
@@ -17,29 +17,29 @@ class BerlinerComponent extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <img src={berlingrafik} className="Team" alt="logo"/>
-                    <img src={logo} className="Team" alt="logo"/>
+                    <img src={berlingrafik} className="Team" alt="logo" />
+                    <img src={logo} className="Team" alt="logo" />
                 </header>
 
                 <p className="berlinercontent">
                     <h2>Development Team</h2>
-                    <img src={devteamgrafik} width="830" alt="devteam bild"/>
+                    <img src={devteamgrafik} width="830" alt="devteam bild" />
                 </p>
 
                 <p className="berlinercontent">
                     <h2>Product Owner</h2>
-                    <img src={productownergrafik} alt="productowner bild"/>
+                    <img src={productownergrafik} alt="productowner bild" />
                 </p>
 
                 <p className="berlinercontent">
                     <h2>Manifest 7 - 12</h2>
-                    <img src={manifestografik} alt="manifesto bild"/>
+                    <img src={manifestografik} alt="manifesto bild" />
 
                 </p>
 
                 <p className="berlinercontent">
                     <h2>Artifact: Product-Backlog</h2>
-                    <img src={productBackloggrafik} alt="productbacklog bild"/>
+                    <img src={productBackloggrafik} alt="productbacklog bild" />
                 </p>
 
                 <div className="contentleft">
@@ -81,12 +81,12 @@ class BerlinerComponent extends Component {
                     that sprint's velocity.
                 </p>
                 <p className="berlinercontent">
-                    <img src={definitionofdone} alt="definition of done"/>
+                    <img src={definitionofdone} alt="definition of done" />
                 </p>
 
                 <p className="berlinercontent">
                     <h2>Sprint Retrospective</h2>
-                    <img width="800px" src={retrospectivegrafik} alt="retrospective bild"/>
+                    <img width="800px" src={retrospectivegrafik} alt="retrospective bild" />
 
                 </p>
 
@@ -134,7 +134,7 @@ class BerlinerComponent extends Component {
 
                 <p className="berlinercontent">
                     <h2>Product Backlog Items and 3Cs</h2>
-                    <img src={csgrafik} alt="three cs bild"/>
+                    <img src={csgrafik} alt="three cs bild" />
 
                 </p>
 
@@ -166,6 +166,48 @@ class BerlinerComponent extends Component {
                             backlog item relative to another product backlog item and you’re far more likely to end up
                             with a consensus.
                         </li>
+                    </ul>
+                </div>
+
+                <p className="berlinercontent">
+                    <h2>Version Control best practices</h2>
+                </p>
+                <div className="contentleft">
+                    <ul>
+                        <li>Use a descriptive commit message</li>
+                        <p>Users can search through the commit messages</p>
+                        <li>Make each commit a logical unit </li>
+                        <p>Each commit should have a single purpose and should completely implement that purpose. </p>
+                        This makes it easier to locate the changes related to some particular feature or bug fix
+                        <p><code>git add file1 file2</code></p>
+                        <p><code>git commit -m "message"</code></p>
+                        <p><code>git commit file1 file2 //commits the two named files.</code></p>
+                        <p>If a single file contains changes that serve multiple purposes, you may need to save your all your edits, then re-introduce them in logical chunks, committing as you go.
+                        Git contains more sophisticated ways to do this, such as staging some but not all of the changes in a given file to the index
+                        </p>
+
+                        <li>Incorporate others' changes frequently</li>
+                        <p>Work with the most up-to-date version of the files as possible. </p>
+                        <li>Share your changes frequently</li>
+                        <p>Once you have committed the changes for a complete, logical unit of work, you should share those changes with your colleagues as soon as possible (by doing git push or hg push).</p>
+                        <li>Coordinate with your co-workers</li>
+                        <p>The version control system can often merge changes that different people made simultaneously. However, when two people edit the same line, then this is a conflict that a person must manually resolve. </p>
+                        <li>Don't commit generated files</li>
+                        <p>Version control is intended for files that people edit.</p>
+                    </ul>
+
+                </div>
+                <p className="berlinercontent">
+                    <h2>How to assess progress for transparency</h2>
+                </p>
+                <div className="contentleft">
+                    <p>The most important element to Scrum and Agile is the enthusiasm for communication, openness and transparency. 
+                    All these panels, messages, posters and rules are essential for teams. How many of us have kept these rules in mind, but we did not have them written down? This is a great example of transparency that requires our teams to question themselves if we are all on the same page.
+                    </p>
+                    <ul>
+                        <li>Transparency is something we must internalize in our teams.</li>
+                        <li>It will always generate confidence and will help to understand why certain things happen, some things work and other things not.</li>
+                        <li>Trying to hide mistakes will not make us any better.</li>
                     </ul>
                 </div>
             </div>
