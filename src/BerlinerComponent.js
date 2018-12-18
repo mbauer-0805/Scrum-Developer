@@ -9,6 +9,9 @@ import definitionofdone from "./berlinerRes/definitionOfDone.jpg";
 import retrospectivegrafik from "./berlinerRes/SprintRetro.png";
 import csgrafik from "./berlinerRes/cs.png";
 import storypoints from "./berlinerRes/Estimating.jpg";
+import Transboard from "./berlinerRes/Transboard.jpg";
+import Transparency from "./berlinerRes/Transparency.jpg";
+import agileBranchingGrafik from "./berlinerRes/agileBranching.jpg";
 
 class BerlinerComponent extends Component {
 
@@ -199,16 +202,68 @@ class BerlinerComponent extends Component {
                 </div>
                 <p className="berlinercontent">
                     <h2>How to assess progress for transparency</h2>
+                    <div className="contentleft">
+
+                        <ul>
+                            <p>The most important element to Scrum and Agile is the enthusiasm for communication, openness and transparency.
+                            All these panels, messages, posters and rules are essential for teams. How many of us have kept these rules in mind, but we did not have them written down? This is a great example of transparency that requires our teams to question themselves if we are all on the same page.
+                    </p>
+                            <img src={Transboard} width="800px" alt="transboard bild"></img>
+                            <img src={Transparency} width="800px" alt="transparency bild"></img>
+
+                        </ul>
+                    </div>
                 </p>
                 <div className="contentleft">
-                    <p>The most important element to Scrum and Agile is the enthusiasm for communication, openness and transparency. 
-                    All these panels, messages, posters and rules are essential for teams. How many of us have kept these rules in mind, but we did not have them written down? This is a great example of transparency that requires our teams to question themselves if we are all on the same page.
-                    </p>
+
                     <ul>
                         <li>Transparency is something we must internalize in our teams.</li>
                         <li>It will always generate confidence and will help to understand why certain things happen, some things work and other things not.</li>
                         <li>Trying to hide mistakes will not make us any better.</li>
+                        <h2> Assessment via Daily Scrum</h2>
+                        The Daily Scrum is an opportunity for the Development Team to check in, assess progress towards achieving the Sprint Goal
+                        
                     </ul>
+                </div>
+
+                <p className="berlinercontent">
+                    <h2>Agile Branching strategy </h2>
+                    <h3>branching model for Scrum  oriented towards team collaboration and continuous integration</h3>
+                </p>
+
+                <p className="berlinercontent">
+                    <img src={agileBranchingGrafik} width="800px" alt="agile Branching bild" />
+                </p>
+
+
+                <div className="contentleft">
+                    <p>Master branch:</p>
+                    <ul>
+                        <li>reflects the level of code approved by the Product Owner as being ready for the production
+                         </li>
+                    </ul>
+                    <p>Sprint branch/ “ready for demo” branch:</p>
+                    <ul>
+                        <li>aims at containing commits of completed stories   </li>
+                        <li>the ones that will be presented to the Product Owner during the sprint review</li>
+                        <li>At the beginning of each new sprint, its sprint branch is created from the master branch</li>
+                    </ul>
+                    <p>Story branch:</p>
+                    <ul>
+                        <li>As soon as the sprint starts, a dedicated branch for each story will be created from the sprint</li>
+                        <li>can be seen as a  reference branch for the development of a specific feature</li>
+                        <li>short-lived branch but not to be considered as a "garbage" branch</li>
+                        <li>commits that will be pushed to the remote story branch should be relevant, atomic and clean</li>
+                    </ul>
+                </div>
+                <p className="berlinercontent">    
+                    <h2>Software Architecture in Scrum</h2>
+                </p>
+                <div className="contentleft">
+                    <p>When we talk about software architecture, we are talking about making decisions. </p>
+                    <p>Scrum mandates having a piece of working software at the end of the Sprint, which integrates with previously (if any) integrated pieces of working software (this is called an Increment) and that is built according to a Definition of Done.</p>
+                    <p>Therefore, all design decisions that are made throughout the Sprint make software architecture emerge and are embodied in the piece of working software. </p>
+                    <p>There is no special moment for the design of the software architecture in Scrum. There is no "software architecture Sprint.". Making only design decisions during this type of a sprint would result in no value. Architecture in Scrum emerges, it is not created somewhere, or at some specific time. </p>
                 </div>
             </div>
 
