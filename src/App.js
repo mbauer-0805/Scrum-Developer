@@ -8,6 +8,7 @@ import productBackloggrafik from './productBacklog.jpg';
 import definitionofdone from './definitionOfDone.jpg'
 import retrospectivegrafik from './SprintRetro.png'
 import storypoints from './sprelations.png';
+import csgrafik from './cs.png';
 
 class App extends Component {
   render() {
@@ -104,6 +105,12 @@ During the Sprint Retrospective, the team discusses:</p>
         </div>
 
         <p className="berlinercontent">
+    <h2>Product Backlog Items and 3Cs</h2>
+    <img src={csgrafik} alt="three cs bild" />
+
+  </p>
+
+        <p className="berlinercontent">
           <h2>Story Points</h2>
           <img src={storypoints} width="800px" alt="productbacklog bild"></img>
         </p>
@@ -123,6 +130,7 @@ During the Sprint Retrospective, the team discusses:</p>
 
 
     );
+
   }
 }
 
