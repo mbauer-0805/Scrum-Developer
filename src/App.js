@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import logo from './huoLongRes/huoLong.png';
-import './App.css';
+import './HuoLong.css';
 import HuoLongComponent from "./HuoLongComponent";
 
 class App extends Component {
