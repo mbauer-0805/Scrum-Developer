@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from './huoLong.png';
+import logo from './huoLong.PNG';
 import './App.css';
 import CustomComponent from "./CustomComponent";
 
