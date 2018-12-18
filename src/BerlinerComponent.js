@@ -225,52 +225,52 @@ class BerlinerComponent extends Component {
                 </div>
 
                 <p className="berlinercontent">
-                <h2>Fit For Purpose</h2>
-               <li> Fitness criteria are metrics that measure things customers value when selecting a service again & again</li> 
-<li> Delivery time</li> 
-<li>Quality</li>
-<li>Predictability</li>
-<li>Safety (or conformance to regulatory requirements)</li>
+                    <h2>Fit For Purpose</h2>
+                    <li> Fitness criteria are metrics that measure things customers value when selecting a service again & again</li>
 
-<li>Delivery time = approximately 1 hour </li>
-<li>Non-functional quality = tasty and hot </li>
-<li> Functional quality (order accuracy) = doesn’t matter if small mistakes are made, geeks will eat any flavor of pizza</li>
-<li>Predictability = +/- 30 minutes is acceptable </li>
-<li> Safety = so long as health and safety in food  preparation is good, it’s fine</li>
+                    <li>Quality</li>
+                    <li>Predictability</li>
+                    <li>Safety (or conformance to regulatory requirements)</li>
 
-<h3 >Lesson:</h3> 
-<li> We need to offer a selection of different recipes which are tasty and popular. However, we must also deliver with speed & predictability</li>
+                    <li>Delivery time = approximately 1 hour </li>
+                    <li>Non-functional quality = tasty and hot </li>
+                    <li> Functional quality (order accuracy) = doesn’t matter if small mistakes are made, geeks will eat any flavor of pizza</li>
+                    <li>Predictability = +/- 30 minutes is acceptable </li>
+                    <li> Safety = so long as health and safety in food  preparation is good, it’s fine</li>
 
-Different segments of customers want different things. If you are trying to be the best, you need to consider which segments you are targeting. It’s unlikely you are going to please everybody all of the time. In other words, you are going to need to focus on a SOME of the possible market. Considering this helps you find your niche markets. You then need to ask yourself questions about their values, such as:
+                    <h3 >Lesson:</h3>
+                    <li> We need to offer a selection of different recipes which are tasty and popular. However, we must also deliver with speed & predictability</li>
+
+                    Different segments of customers want different things. If you are trying to be the best, you need to consider which segments you are targeting. It’s unlikely you are going to please everybody all of the time. In other words, you are going to need to focus on a SOME of the possible market. Considering this helps you find your niche markets. You then need to ask yourself questions about their values, such as:
 <li> What will make them choose my product? What will turn them off?</li>
-<li>What will make them become a repeat customer? What will scare them away forever? </li>
-<li> What will cause them to recommend me to others? What will make them tell everyone to stay away?</li>
+                    <li>What will make them become a repeat customer? What will scare them away forever? </li>
+                    <li> What will cause them to recommend me to others? What will make them tell everyone to stay away?</li>
 
 
-It relates strongly to the first agile Principle
-<li>Our highest priority is to satisfy the customer through early and continuous delivery.</li>	
+                    It relates strongly to the first agile Principle
+<li>Our highest priority is to satisfy the customer through early and continuous delivery.</li>
 
-                </p>  
+                </p>
 
                 <p className="berlinercontent">
-                <h2>Communicate work: plan and track</h2>
-                </p>        
-                
+                    <h2>Communicate work: plan and track</h2>
+                </p>
+
                 <div className="contentleft">
-                <ul>
-                    <li>The Daily Scrum is an opportunity for the Development Team to check in, assess progress towards achieving the Sprint Goal</li>
-                    <li>The sprint backlog, if updated every day, always gives an up-to-date status for your project stakeholders. You can also show them the product backlog so that they know which features the scrum team has completed to date, which features are part of future sprints, and the priority of the features.</li>
-                    <li>The burndown chart quickly shows, rather than tells, status. When you look at a sprint burndown chart, you can instantly see if the sprint is going well, or if it might be in trouble.</li>
-                    <div className="berlinercontent">
-                    <img src={burndown} alt="definition of done" />
-                
-                    </div>
-                    
-                    <li>A task board is a great way to quickly show your project team the status of a sprint, release, or even of the entire project. Task boards have sticky notes with user story titles in at least four columns: To Do, In Progress, Accept, and Done. </li>
-                
-                </ul>
-                
-                
+                    <ul>
+                        <li>The Daily Scrum is an opportunity for the Development Team to check in, assess progress towards achieving the Sprint Goal</li>
+                        <li>The sprint backlog, if updated every day, always gives an up-to-date status for your project stakeholders. You can also show them the product backlog so that they know which features the scrum team has completed to date, which features are part of future sprints, and the priority of the features.</li>
+                        <li>The burndown chart quickly shows, rather than tells, status. When you look at a sprint burndown chart, you can instantly see if the sprint is going well, or if it might be in trouble.</li>
+                        <div className="berlinercontent">
+                            <img src={burndown} alt="definition of done" />
+
+                        </div>
+
+                        <li>A task board is a great way to quickly show your project team the status of a sprint, release, or even of the entire project. Task boards have sticky notes with user story titles in at least four columns: To Do, In Progress, Accept, and Done. </li>
+
+                    </ul>
+
+
 
                 </div>
 
