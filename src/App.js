@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import logo from './huoLong.png';
+import logo from './huoLongRes/huoLong.png';
 import './App.css';
-import CustomComponent from "./CustomComponent";
+import HuoLongComponent from "./HuoLongComponent";
 
 class App extends Component {
     render() {
@@ -11,7 +11,7 @@ class App extends Component {
                     <img src={logo} className="App-logo" alt="logo"/>
                 </header>
 
-                <CustomComponent/>
+                <HuoLongComponent/>
             </div>
         );
     }

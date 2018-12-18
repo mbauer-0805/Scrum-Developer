@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import team from "./scrumTeam.jpg";
-import manifest from "./Manifesto 1-6.JPG";
-import master from "./scrumMaster.jpg";
-import sBacklog from "./sprint_backlog.jpg";
+import team from "./huoLongRes/scrumTeam.jpg";
+import manifest from "./huoLongRes/Manifesto 1-6.JPG";
+import master from "./huoLongRes/scrumMaster.jpg";
+import sBacklog from "./huoLongRes/sprint_backlog.jpg";
 import review from "./dailyScrum.jpg";
-import reviewMeeting from "./reviewMeeting.png";
-import increment from "./increment.jpg";
+import reviewMeeting from "./huoLongRes/reviewMeeting.png";
+import increment from "./huoLongRes/increment.jpg";
 
-class CustomComponent extends Component {
+class HuoLongComponent extends Component {
     constructor(props) {
         super(props);
     }
@@ -81,10 +81,10 @@ class CustomComponent extends Component {
                         </li>
                     </ul>
                     <h2>Manifesto 1-6</h2>
-                    <img src={manifest} className="CustomComponent-Img" alt=""/>
+                    <img src={manifest} className="CustomComponent-Img-Rotate" alt=""/>
 
                     <h2>Scrum Backlog</h2>
-                    <img src={sBacklog} className="CustomComponent-Img" alt=""/>
+                    <img src={sBacklog} className="CustomComponent-Img-Rotate" alt=""/>
                     <h2>Spring Review</h2>
                     <p>When : at the END of the Sprint - &gt;</p>
                     <ul>
@@ -135,7 +135,7 @@ class CustomComponent extends Component {
                         vision or goal. The increment must be in<br/>useable condition regardless of whether the Product
                         Owner decides to release it.</p>
 
-                    <img src={increment} alt="logo"/>
+                    <img src={increment} className="CustomComponent-Img" alt="logo"/>
 
                 </div>
             </div>
@@ -143,4 +143,4 @@ class CustomComponent extends Component {
     }
 }
 
-export default CustomComponent;
+export default HuoLongComponent;

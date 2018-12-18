@@ -35,7 +35,7 @@
     width: 30%;
 }
 
-.CustomComponent-Img{
+.CustomComponent-Img-Rotate{
     width: 50%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -45,6 +45,14 @@
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+.CustomComponent-Img{
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
 
 /*
 @keyframes App-logo-spin {
