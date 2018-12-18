@@ -103,6 +103,11 @@ During the Sprint Retrospective, the team discusses:</p>
       <p>
       Each Sprint may be considered a project with no more than a one-month horizon. Like projects, Sprints are used to accomplish something. Each Sprint has a goal of what is to be built, a design and flexible plan that will guide building it, the work, and the resultant product increment.
       </p>
+
+      <p className="berlinercontent">
+          <h2>Artifact: Product-Backlog</h2>
+          <img src={productBackloggrafik} alt="productbacklog bild" />
+        </p>
 </div>
 
       </div>
