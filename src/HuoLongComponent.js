@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import team from "./huoLongRes/scrumTeam.jpg";
 import manifest from "./huoLongRes/Manifesto 1-6.JPG";
 import master from "./huoLongRes/scrumMaster.jpg";
@@ -18,6 +18,8 @@ import branchMerch3 from "./huoLongRes/branchMerchWhole3.PNG";
 import bduf from "./huoLongRes/bduf.png";
 import tasks from "./huoLongRes/tasks.jpg";
 import emergArch from "./huoLongRes/EmergentArchitecture.jpg";
+import bug1 from "./huoLongRes/Bug1.png";
+import bug2 from "./huoLongRes/bug2.jpg";
 
 class HuoLongComponent extends Component {
 
@@ -29,7 +31,7 @@ class HuoLongComponent extends Component {
                     <div>
                         <h1>Scrum Team</h1>
 
-                        <img src={team} className="Team" alt="logo" />
+                        <img src={team} className="Team" alt="logo"/>
                         <div className="contentleft">
                             <p>&nbsp;</p>
                             <p>self-organizing : not directed by anyone outside&nbsp; the team</p>
@@ -47,7 +49,7 @@ class HuoLongComponent extends Component {
                         </div>
                     </div>
                     <h1>Scrum Master</h1>
-                    <img src={master} className="App-logo" alt="logo" />
+                    <img src={master} className="App-logo" alt="logo"/>
 
                     <p>&nbsp;</p>
                     <div className="contentleft">
@@ -95,10 +97,10 @@ class HuoLongComponent extends Component {
                         </ul>
                     </div>
                     <h2>Manifesto 1-6</h2>
-                    <img src={manifest} className="CustomComponent-Img-Rotate" alt="" />
+                    <img src={manifest} className="CustomComponent-Img-Rotate" alt=""/>
 
                     <h2>Scrum Backlog</h2>
-                    <img src={sBacklog} className="CustomComponent-Img-Rotate" alt="" />
+                    <img src={sBacklog} className="CustomComponent-Img-Rotate" alt=""/>
 
                     <h2>Spring Review</h2>
                     <div className="contentleft">
@@ -127,7 +129,7 @@ class HuoLongComponent extends Component {
                             <li>a revised Product Backlog that defines the probable items for next Sprint</li>
                         </ul>
                     </div>
-                    <img src={reviewMeeting} alt="logo" />
+                    <img src={reviewMeeting} alt="logo"/>
 
                     <h2>Daily Scrum</h2>
                     <div className="contentleft">
@@ -140,23 +142,23 @@ class HuoLongComponent extends Component {
                             <li>&Uuml;berpr&uuml;fung und Anpassung</li>
                         </ul>
                     </div>
-                    <img src={review} alt="logo" />
+                    <img src={review} alt="logo"/>
                     <div className="contentleft">
                         <h3>Increment</h3>
                         <p>The Increment is the sum of all the Product Backlog items completed during a Sprint and
-                            the<br />value
+                            the<br/>value
                             of the increments of all previous Sprints. At the end of a Sprint, the new Increment
-                            must<br />be &ldquo;Done,&rdquo; which means it must be in useable condition and meet the
+                            must<br/>be &ldquo;Done,&rdquo; which means it must be in useable condition and meet the
                             Scrum
-                            Team&rsquo;s definition<br />of &ldquo;Done.&rdquo; An increment is a body of inspectable,
+                            Team&rsquo;s definition<br/>of &ldquo;Done.&rdquo; An increment is a body of inspectable,
                             done
-                            work that supports empiricism at the<br />end of the Sprint. The increment is a step toward a
-                            vision or goal. The increment must be in<br />useable condition regardless of whether the
+                            work that supports empiricism at the<br/>end of the Sprint. The increment is a step toward a
+                            vision or goal. The increment must be in<br/>useable condition regardless of whether the
                             Product
                             Owner decides to release it.</p>
 
                     </div>
-                    <img src={increment} className="CustomComponent-Img" alt="logo" />
+                    <img src={increment} className="CustomComponent-Img" alt="logo"/>
                     <h2>User Stories</h2>
                     <div className="contentleft">
                         <ul>
@@ -179,7 +181,7 @@ class HuoLongComponent extends Component {
                         </ul>
                         <h3>Epic, User Story und Task</h3>
                     </div>
-                    <img src={epic} className="CustomComponent-Img" alt="logo" />
+                    <img src={epic} className="CustomComponent-Img" alt="logo"/>
                     <div className="contentleft">
                         <ul>
                             <li>Epic: H&ouml;chste Abstraktionsstufe, zu gro&szlig; f&uuml;r einen Sprint.</li>
@@ -212,7 +214,7 @@ class HuoLongComponent extends Component {
                         </ul>
                     </div>
                     <h3>Story-Card</h3>
-                    <img src={storyCard} className="CustomComponent-Img" alt="logo" />
+                    <img src={storyCard} className="CustomComponent-Img" alt="logo"/>
 
                     <h2>Ideal Day</h2>
                     <div className="contentleft">
@@ -227,14 +229,14 @@ class HuoLongComponent extends Component {
                             <li>each member estimates how many ideal days he need to finish the user story</li>
                         </ul>
                     </div>
-                    <img src={idealDay} className="CustomComponent-Img" alt="logo" />
+                    <img src={idealDay} className="CustomComponent-Img" alt="logo"/>
 
                     <h2>Continious Integration</h2>
-                    <img src={contIntegration} className="CustomComponent-Img" alt="logo" /><br />
-                    <img src={contIntegrationBrands} className="CustomComponent-Img" alt="logo" />
+                    <img src={contIntegration} className="CustomComponent-Img" alt="logo"/><br/>
+                    <img src={contIntegrationBrands} className="CustomComponent-Img" alt="logo"/>
 
                     <h2>Sprint Planning</h2>
-                    <img src={sprintPlanning} className="CustomComponent-Img" alt="logo" />
+                    <img src={sprintPlanning} className="CustomComponent-Img" alt="logo"/>
                     <div className="contentleft">
                         <p>Who?</p>
                         <ul>
@@ -262,9 +264,9 @@ class HuoLongComponent extends Component {
                         </ul>
 
                         <h2>Branching vs. Merging</h2>
-                        <img src={branchMerch1} className="CustomComponent-Img" alt="logo" /><br />
-                        <img src={branchMerch2} className="CustomComponent-Img" alt="logo" /><br />
-                        <img src={branchMerch3} className="CustomComponent-Img" alt="logo" /><br />
+                        <img src={branchMerch1} className="CustomComponent-Img" alt="logo"/><br/>
+                        <img src={branchMerch2} className="CustomComponent-Img" alt="logo"/><br/>
+                        <img src={branchMerch3} className="CustomComponent-Img" alt="logo"/><br/>
                     </div>
 
                 </div>
@@ -282,23 +284,30 @@ class HuoLongComponent extends Component {
                     </ul>
                     <h3>Alternative&nbsp;</h3>
                     <p>Emergent Design</p>
-                    <img src={bduf} className="CustomComponent-Img" alt="logo" />
+                    <img src={bduf} className="CustomComponent-Img" alt="logo"/>
                 </div>
                 <div className="contentleft">
                     <h2>Emergent Architecture</h2>
                     <ul>
                         <li>Needs emerge due to functional and non-functional requirements.</li>
                         <li>
-                            <div>Some parts of Non-functional requirements(i.e. Security or Scalability) are ordered high in the Product Backlog, because they are needed for the initial release of viable products.</div>
+                            <div>Some parts of Non-functional requirements(i.e. Security or Scalability) are ordered
+                                high in the Product Backlog, because they are needed for the initial release of viable
+                                products.
+                            </div>
 
                         </li>
-                        <li>So as we evolve the system, we build only enough architecture and design to support the requirements of that Sprint.</li>
-                        <li>With every Sprint, the architecture and design emerges in response to more and more high-ordered requirements</li>
+                        <li>So as we evolve the system, we build only enough architecture and design to support the
+                            requirements of that Sprint.
+                        </li>
+                        <li>With every Sprint, the architecture and design emerges in response to more and more
+                            high-ordered requirements
+                        </li>
                     </ul>
-                    <img src={emergArch} className="CustomComponent-Img" alt="logo" />
+                    <img src={emergArch} className="CustomComponent-Img" alt="logo"/>
                 </div>
                 <div className="contentleft">
-                    <h2>Communicate Work: Tasks</h2>
+                    <h2 className="berlinercontent">Communicate Work: Tasks</h2>
                     <p><strong>Tasks</strong></p>
                     <ul>
                         <li>breaks&nbsp;user stories&nbsp;or PBIs at the sprint planning meeting to a more granular
@@ -308,10 +317,22 @@ class HuoLongComponent extends Component {
                         <li>completed by one person on the team.</li>
                         <li>shouldn'ttake more than a day</li>
                     </ul>
-                    <img src={tasks} className="CustomComponent-Img" alt="logo" />
+                    <img src={tasks} className="CustomComponent-Img" alt="logo"/>
                 </div>
                 <div className="contentleft">
-
+                    <h2 className="berlinercontent">Bugs</h2>
+                    <ul>
+                        <li>Bug Report schreiben</li>
+                        <li>Bug Backlog</li>
+                        <li>Good Code Base</li>
+                        <li>Ab&auml;gen ob der Bug kritisch ist</li>
+                        <li>Product Owner melden</li>
+                        <li>Jedes Team geht mit Bugs anders um</li>
+                        <li>Nicht wichtige Bugs vergessen</li>
+                        <li>Kritische Bugs sofort behandeln</li>
+                    </ul>
+                    <img src={bug1} className="CustomComponent-Img" alt="logo"/>
+                    <img src={bug2} className="CustomComponent-Img" alt="logo"/>
                 </div>
             </div>
         );
