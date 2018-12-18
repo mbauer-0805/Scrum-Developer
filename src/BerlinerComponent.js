@@ -10,7 +10,7 @@ import retrospectivegrafik from "./berlinerRes/SprintRetro.png";
 import csgrafik from "./berlinerRes/cs.png";
 import storypoints from "./berlinerRes/Estimating.jpg";
 import Transboard from "./berlinerRes/Transboard.jpg";
-import Transparency from "./berlinerRes/Transparency.png";
+import Transparency from "./berlinerRes/Transparency.jpg";
 import Pizza from "./berlinerRes/pizzad.png";
 import agileBranchingGrafik from "./berlinerRes/agileBranching.jpg";
 import burndown from './berlinerRes/burdown.png';
@@ -232,7 +232,7 @@ class BerlinerComponent extends Component {
                 <div className="contentleft">
                 <p>Fitness criteria are metrics that measure things customers value when selecting a service again & again</p>
                     
-                <img src={Pizza} width="800px" alt="pizza bild"></img>
+
                     <li>Quality</li>
                     <li>Predictability</li>
                     <li>Safety (or conformance to regulatory requirements)</li>
