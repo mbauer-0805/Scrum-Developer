@@ -17,7 +17,9 @@ import branchMerch2 from "./huoLongRes/branchMerchWhole2.PNG";
 import branchMerch3 from "./huoLongRes/branchMerchWhole3.PNG";
 import bduf from "./huoLongRes/bduf.png";
 import tasks from "./huoLongRes/tasks.jpg";
-
+import emergArch from "./huoLongRes/EmergentArchitecture.jpg";
+import bug1 from "./huoLongRes/Bug1.png";
+import bug2 from "./huoLongRes/bug2.jpg";
 
 class HuoLongComponent extends Component {
 
@@ -285,7 +287,27 @@ class HuoLongComponent extends Component {
                     <img src={bduf} className="CustomComponent-Img" alt="logo"/>
                 </div>
                 <div className="contentleft">
-                    <h2>Communicate Work: Tasks</h2>
+                    <h2>Emergent Architecture</h2>
+                    <ul>
+                        <li>Needs emerge due to functional and non-functional requirements.</li>
+                        <li>
+                            <div>Some parts of Non-functional requirements(i.e. Security or Scalability) are ordered
+                                high in the Product Backlog, because they are needed for the initial release of viable
+                                products.
+                            </div>
+
+                        </li>
+                        <li>So as we evolve the system, we build only enough architecture and design to support the
+                            requirements of that Sprint.
+                        </li>
+                        <li>With every Sprint, the architecture and design emerges in response to more and more
+                            high-ordered requirements
+                        </li>
+                    </ul>
+                    <img src={emergArch} className="CustomComponent-Img" alt="logo"/>
+                </div>
+                <div className="contentleft">
+                    <h2 className="berlinercontent">Communicate Work: Tasks</h2>
                     <p><strong>Tasks</strong></p>
                     <ul>
                         <li>breaks&nbsp;user stories&nbsp;or PBIs at the sprint planning meeting to a more granular
@@ -298,7 +320,19 @@ class HuoLongComponent extends Component {
                     <img src={tasks} className="CustomComponent-Img" alt="logo"/>
                 </div>
                 <div className="contentleft">
-
+                    <h2 className="berlinercontent">Bugs</h2>
+                    <ul>
+                        <li>Bug Report schreiben</li>
+                        <li>Bug Backlog</li>
+                        <li>Good Code Base</li>
+                        <li>Ab&auml;gen ob der Bug kritisch ist</li>
+                        <li>Product Owner melden</li>
+                        <li>Jedes Team geht mit Bugs anders um</li>
+                        <li>Nicht wichtige Bugs vergessen</li>
+                        <li>Kritische Bugs sofort behandeln</li>
+                    </ul>
+                    <img src={bug1} className="CustomComponent-Img" alt="logo"/>
+                    <img src={bug2} className="CustomComponent-Img" alt="logo"/>
                 </div>
             </div>
         );
