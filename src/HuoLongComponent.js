@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import team from "./huoLongRes/scrumTeam.jpg";
 import manifest from "./huoLongRes/Manifesto 1-6.JPG";
 import master from "./huoLongRes/scrumMaster.jpg";
@@ -23,79 +23,79 @@ class HuoLongComponent extends Component {
                     <div>
                         <h1>Scrum Team</h1>
 
-                        <img src={team} className="Team" alt="logo"/>
-
-                        <p>&nbsp;</p>
-                        <p>self-organizing : not directed by anyone outside&nbsp; the team</p>
-                        <p>cross-functional : have all competencies to accomplish the work</p>
-                        <p>&nbsp;</p>
-                        <p>team model designed to optimize</p>
-                        <ul>
-                            <li>flexibility</li>
-                            <li>creativity</li>
-                            <li>productivity</li>
-                        </ul>
-                        <p>&nbsp;</p>
-                        <p>deliver products&nbsp;<strong>iteratively</strong>&nbsp;and&nbsp;<strong>incrementally,
+                        <img src={team} className="Team" alt="logo" />
+                        <div className="contentleft">
+                            <p>&nbsp;</p>
+                            <p>self-organizing : not directed by anyone outside&nbsp; the team</p>
+                            <p>cross-functional : have all competencies to accomplish the work</p>
+                            <p>&nbsp;</p>
+                            <p>team model designed to optimize</p>
+                            <ul>
+                                <li>flexibility</li>
+                                <li>creativity</li>
+                                <li>productivity</li>
+                            </ul>
+                            <p>&nbsp;</p>
+                            <p>deliver products&nbsp;<strong>iteratively</strong>&nbsp;and&nbsp;<strong>incrementally,
                             maximizing feedback</strong></p>
-
+                        </div>
                     </div>
                     <h1>Scrum Master</h1>
-                    <img src={master} className="App-logo" alt="logo"/>
+                    <img src={master} className="App-logo" alt="logo" />
 
                     <p>&nbsp;</p>
-
-                    <ul>
-                        <li>Unterst&uuml;tzt das Team zum Einhalten der im Scrum Guide beschriebenen Richtlinien.</li>
-                        <li>Hilft, die Schnittstelle des Scrum-Teams nach au&szlig;en m&ouml;glichst effizient zu
-                            gestalten.
+                    <div className="contentleft">
+                        <ul>
+                            <li>Unterst&uuml;tzt das Team zum Einhalten der im Scrum Guide beschriebenen Richtlinien.</li>
+                            <li>Hilft, die Schnittstelle des Scrum-Teams nach au&szlig;en m&ouml;glichst effizient zu
+                                gestalten.
                         </li>
-                    </ul>
-                    <p>&nbsp;</p>
-                    <h3>Scrum Master -&gt; Product Owner</h3>
-                    <ul>
-                        <li>Versucht, das vollkomme Verst&auml;ndnis der Ziele, des Umfangs und der Produktdom&auml;ne
-                            im Team zu gew&auml;hrleisten.
+                        </ul>
+                        <p>&nbsp;</p>
+                        <h3>Scrum Master -&gt; Product Owner</h3>
+                        <ul>
+                            <li>Versucht, das vollkomme Verst&auml;ndnis der Ziele, des Umfangs und der Produktdom&auml;ne
+                                im Team zu gew&auml;hrleisten.
                         </li>
-                        <li>Vermittelt die Notwendigkeit der Pflege des Product Backlogs.</li>
-                        <li>Unters&uuml;tzt bei Anfrage oder Bedarf die Scrum-Events.</li>
-                    </ul>
-                    <p>&nbsp;</p>
-                    <h3>Scrum Master -&gt; Development Team</h3>
-                    <ul>
-                        <li>Coacht das Team zur besseren Selbstorganisation und zur Cross-Functionality.</li>
-                        <li>R&auml;umt impediments f&uuml;r das Team aus dem Weg.</li>
-                        <li>Coacht das Team in einer Umgebung, in der Scrum noch nicht komplett adaptiert wurde.</li>
-                        <li>Unters&uuml;tzt bei Anfrage oder Bedarf die Scrum-Events.</li>
-                    </ul>
-                    <p>&nbsp;</p>
-                    <h3>Scrum Master -&gt; Organization</h3>
-                    <ul>
-                        <li>F&uuml;hrung und Coaching der Einf&uuml;hrung von Scrum.</li>
-                        <li>Hilft Angestellten und den Stakeholdern Scrum, sowie empirische Produkt (Software)
-                            Entwicklung zu verstehen.
+                            <li>Vermittelt die Notwendigkeit der Pflege des Product Backlogs.</li>
+                            <li>Unters&uuml;tzt bei Anfrage oder Bedarf die Scrum-Events.</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <h3>Scrum Master -&gt; Development Team</h3>
+                        <ul>
+                            <li>Coacht das Team zur besseren Selbstorganisation und zur Cross-Functionality.</li>
+                            <li>R&auml;umt impediments f&uuml;r das Team aus dem Weg.</li>
+                            <li>Coacht das Team in einer Umgebung, in der Scrum noch nicht komplett adaptiert wurde.</li>
+                            <li>Unters&uuml;tzt bei Anfrage oder Bedarf die Scrum-Events.</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <h3>Scrum Master -&gt; Organization</h3>
+                        <ul>
+                            <li>F&uuml;hrung und Coaching der Einf&uuml;hrung von Scrum.</li>
+                            <li>Hilft Angestellten und den Stakeholdern Scrum, sowie empirische Produkt (Software)
+                                Entwicklung zu verstehen.
                         </li>
-                        <li>F&uuml;hrt bei Bedarf Ver&auml;nderungen durch, um die Produktivit&auml;t des Scrum Teams zu
-                            verbessern.
+                            <li>F&uuml;hrt bei Bedarf Ver&auml;nderungen durch, um die Produktivit&auml;t des Scrum Teams zu
+                                verbessern.
                         </li>
-                        <li>Arbeitet mit anderen Scrum Mastern zusammen, um die allgemeine Effektivit&auml;t von Scrum
-                            in der Organisation zu steigern.
+                            <li>Arbeitet mit anderen Scrum Mastern zusammen, um die allgemeine Effektivit&auml;t von Scrum
+                                in der Organisation zu steigern.
                         </li>
-                    </ul>
+                        </ul>
+                    </div>
                     <h2>Manifesto 1-6</h2>
-                    <img src={manifest} className="CustomComponent-Img-Rotate" alt=""/>
+                    <img src={manifest} className="CustomComponent-Img-Rotate" alt="" />
 
                     <h2>Scrum Backlog</h2>
-                    <img src={sBacklog} className="CustomComponent-Img-Rotate" alt=""/>
+                    <img src={sBacklog} className="CustomComponent-Img-Rotate" alt="" />
+
                     <h2>Spring Review</h2>
+                    <div className="contentleft">
                     <p>When : at the END of the Sprint - &gt;</p>
                     <ul>
-                        <ul>
-                            <li>inspect the Increment</li>
-                            <li>adapt Product Backlog</li>
-                        </ul>
+                        <li>inspect the Increment</li>
+                        <li>adapt Product Backlog</li>
                     </ul>
-
                     <p>Duration : 4h for one month Sprints</p>
                     <p>Who:</p>
                     <ul>
@@ -115,30 +115,35 @@ class HuoLongComponent extends Component {
                     <ul>
                         <li>a revised Product Backlog that defines the probable items for next Sprint</li>
                     </ul>
-                    <img src={reviewMeeting} alt="logo"/>
+                    </div>
+                    <img src={reviewMeeting} alt="logo" />
 
                     <h2>Daily Scrum</h2>
-                    <ul>
-                        <li>F&ouml;rdern die Kommunikation</li>
-                        <li>Machen andere Meetings &uuml;berfl&uuml;ssig</li>
-                        <li>Identifizieren zu beseitigende Hindernisse</li>
-                        <li>Fokussieren und f&ouml;rdern die schnelle Entscheidungsfindung</li>
-                        <li>Erh&ouml;hen den Wissensstand des Teams</li>
-                        <li>&Uuml;berpr&uuml;fung und Anpassung</li>
-                    </ul>
-                    <img src={review} alt="logo"/>
-
+                    <div className="contentleft">
+                        <ul>
+                            <li>F&ouml;rdern die Kommunikation</li>
+                            <li>Machen andere Meetings &uuml;berfl&uuml;ssig</li>
+                            <li>Identifizieren zu beseitigende Hindernisse</li>
+                            <li>Fokussieren und f&ouml;rdern die schnelle Entscheidungsfindung</li>
+                            <li>Erh&ouml;hen den Wissensstand des Teams</li>
+                            <li>&Uuml;berpr&uuml;fung und Anpassung</li>
+                        </ul>
+                    </div>
+                    <img src={review} alt="logo" />
+                <div className="contentleft">
                     <h3>Increment</h3>
-                    <p>The Increment is the sum of all the Product Backlog items completed during a Sprint and the<br/>value
+                    <p>The Increment is the sum of all the Product Backlog items completed during a Sprint and the<br />value
                         of the increments of all previous Sprints. At the end of a Sprint, the new Increment
-                        must<br/>be &ldquo;Done,&rdquo; which means it must be in useable condition and meet the Scrum
-                        Team&rsquo;s definition<br/>of &ldquo;Done.&rdquo; An increment is a body of inspectable, done
-                        work that supports empiricism at the<br/>end of the Sprint. The increment is a step toward a
-                        vision or goal. The increment must be in<br/>useable condition regardless of whether the Product
+                        must<br />be &ldquo;Done,&rdquo; which means it must be in useable condition and meet the Scrum
+                        Team&rsquo;s definition<br />of &ldquo;Done.&rdquo; An increment is a body of inspectable, done
+                        work that supports empiricism at the<br />end of the Sprint. The increment is a step toward a
+                        vision or goal. The increment must be in<br />useable condition regardless of whether the Product
                         Owner decides to release it.</p>
 
-                    <img src={increment} className="CustomComponent-Img" alt="logo"/>
+                        </div>
+                    <img src={increment} className="CustomComponent-Img" alt="logo" />
                     <h2>User Stories</h2>
+                    <div className="contentleft">
                     <ul>
                         <li>Transportiert die W&uuml;nsche des Kunden an ein Softwareprodukt oder an eine
                             Gesch&auml;ftsl&ouml;sung.
@@ -156,7 +161,9 @@ class HuoLongComponent extends Component {
                         </li>
                     </ul>
                     <h3>Epic, User Story und Task</h3>
-                    <img src={epic} className="CustomComponent-Img" alt="logo"/>
+                    </div>
+                    <img src={epic} className="CustomComponent-Img" alt="logo" />
+                    <div className="contentleft">
                     <ul>
                         <li>Epic: H&ouml;chste Abstraktionsstufe, zu gro&szlig; f&uuml;r einen Sprint.</li>
                         <li>User Story: Enth&auml;lt Anforderungen, Basis f&uuml;r Sch&auml;tzung.</li>
@@ -185,10 +192,12 @@ class HuoLongComponent extends Component {
                         <li>Small</li>
 
                     </ul>
+                    </div>
                     <h3>Story-Card</h3>
-                    <img src={storyCard} className="CustomComponent-Img" alt="logo"/>
+                    <img src={storyCard} className="CustomComponent-Img" alt="logo" />
 
                     <h2>Ideal Day</h2>
+                    <div className="contentleft">
                     <ul>
                         <li>one developer</li>
                         <li>in one eight hour day</li>
@@ -199,15 +208,16 @@ class HuoLongComponent extends Component {
                     <ul>
                         <li>each member estimates how many ideal days he need to finish the user story</li>
                     </ul>
-                    <img src={idealDay} className="CustomComponent-Img" alt="logo"/>
+                    </div>
+                    <img src={idealDay} className="CustomComponent-Img" alt="logo" />
 
                     <h2>Continious Integration</h2>
-                    <img src={contIntegration} className="CustomComponent-Img" alt="logo"/>
-                    <img src={contIntegrationBrands} className="CustomComponent-Img" alt="logo"/>
+                    <img src={contIntegration} className="CustomComponent-Img" alt="logo" />
+                    <img src={contIntegrationBrands} className="CustomComponent-Img" alt="logo" />
 
                     <h2>Sprint Planning</h2>
-                    <img src={sprintPlanning} className="CustomComponent-Img" alt="logo"/>
-
+                    <img src={sprintPlanning} className="CustomComponent-Img" alt="logo" />
+                    <div className="contentleft">
                     <p>Who?</p>
                     <ul>
                         <li>Scrum Master: make sure the event takes place</li>
@@ -229,6 +239,7 @@ class HuoLongComponent extends Component {
                         <li><strong>A Sprint goal</strong>: one-or two-sentence, describes what the team plans to do achieve during the Sprint.</li>
                         <li><strong>A Sprint backlog</strong></li>
                     </ul>
+                    </div>
                 </div>
 
             </div>
