@@ -11,15 +11,11 @@ import idealDay from "./huoLongRes/idealDay.jpg";
 import storyCard from "./huoLongRes/Story_Card.png";
 
 class HuoLongComponent extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
             <div className="CustomComponent">
-                <h2>{this.props.title}</h2>
-                <p>{this.props.description}</p>
+
                 <div className="CustomComponent-div">
                     <div>
                         <h1>Scrum Team</h1>

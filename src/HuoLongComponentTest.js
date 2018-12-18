@@ -3,6 +3,7 @@ import {shallow,configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import HuoLongComponent from './HuoLongComponent.js';
 
+
 test('Check render of HuoLongComponent', () => {
   // Render a checkbox with label in the document
   configure({ adapter: new Adapter() })
