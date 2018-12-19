@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './HuoLong.css';
 
 class TestPracticesComponent extends Component {
 
