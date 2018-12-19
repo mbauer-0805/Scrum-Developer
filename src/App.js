@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './HuoLong.css';
 import berlingrafik from "./berlinerRes/berlin.png";
 import logo from "./huoLongRes/huoLong.png";
@@ -57,411 +57,458 @@ import {
 } from 'react-accessible-accordion';
 import CodingVsDeveloping from "./huolongComponents/CodingVsDeveloping";
 
+import './vendor/bootstrap/css/bootstrap.min.css'
+import './css/scrolling-nav.css'
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <div className="App">
-                    <header className="App-header">
-                        <img src={berlingrafik} className="Team" alt="logo"/>
-                        <img src={logo} className="Team" alt="logo"/>
-                    </header>
-                    <Accordion>
-                        <h2>Scrum</h2>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Scrum Team</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <ScrumTeam/>
-                            </AccordionItemBody>
-                        </AccordionItem>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Development Team</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <DevelopmentTeam/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+            <html>
+                <body id="page-top">
+                    <div className="App">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+                            <div class="container">
+                                <a class="navbar-brand js-scroll-trigger" href="#page-top">Java Jumpstart 11/18</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarResponsive">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link js-scroll-trigger" href="#scrum">Scrum</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link js-scroll-trigger" href="#productbacklog">Product Backlog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link js-scroll-trigger" href="#emergentarchitecture">Emergent Architecture</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link js-scroll-trigger" href="#agilemanifest">Agile Manifest</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link js-scroll-trigger" href="#alm">ALM</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link js-scroll-trigger" href="#testing">Testing</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link js-scroll-trigger" href="#quality">Quality</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <header className="App-header">
+                            <img src={berlingrafik} className="Team" alt="logo" />
+                            <img src={logo} className="Team" alt="logo" />
+                        </header>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Product Owner</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <ProductOwner/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                        <section id="scrum">
+                            <Accordion>
+                                <h2>Scrum</h2>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Scrum Team</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <ScrumTeam />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Scrum Master</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <ScrumMaster/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Product Backlog</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <ProductBacklog/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Increment</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <Increment/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Review Meeting</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <ReviewMeeting/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Retrospecive Meeting</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <SprintRetro/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Sprint</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <TheSprint/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Development Team</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <DevelopmentTeam />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Sprint Planning</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <SprintPlanning/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Sprint Review</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <SprintReview/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Scrum Backlog</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <ScrumBacklog/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                    </Accordion>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Product Owner</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <ProductOwner />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                    <Accordion>
-                        <h2>Product Backlog</h2>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>PBI</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <ProductBacklogItems/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Ideal Day</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <IdealDay/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>User Stories</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <UserStories/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Scrum Master</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <ScrumMaster />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Product Backlog</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <ProductBacklog />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Increment</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <Increment />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Review Meeting</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <ReviewMeeting />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Retrospecive Meeting</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <SprintRetro />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Sprint</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <TheSprint />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Story Points</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <StoryPoints/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Definition of Done</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <DefinitionOfDone/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                    </Accordion>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Sprint Planning</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <SprintPlanning />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Sprint Review</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <SprintReview />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Scrum Backlog</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <ScrumBacklog />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                            </Accordion>
 
-                    <Accordion>
-                        <h2>Emergent Architecture</h2>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Emerging Architecture</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <EmergentArchitecture/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                        </section>
+                        <section id="productbacklog">
+                            <Accordion>
+                                <h2>Product Backlog</h2>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>PBI</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <ProductBacklogItems />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Ideal Day</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <IdealDay />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>User Stories</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <UserStories />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Architecture has no value</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <ArchitectureNoValue/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Story Points</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <StoryPoints />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Definition of Done</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <DefinitionOfDone />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                            </Accordion>
+                        </section>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Fit for Purpose</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <FitForPurpose/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                        <section id="emergentarchitecture">
+                            <Accordion>
+                                <h2>Emergent Architecture</h2>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Emerging Architecture</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <EmergentArchitecture />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>BDUF</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <BDUF/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Architecture has no value</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <ArchitectureNoValue />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                    </Accordion>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Fit for Purpose</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <FitForPurpose />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>BDUF</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <BDUF />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                    <Accordion>
-                        <h2>Agile Manifest</h2>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Agile Manifest Principles</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <Manifesto6/>
-                                <Manifest/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                            </Accordion>
 
-                    </Accordion>
+                        </section>
+                        <section id="agilemanifest">
+                            <Accordion>
+                                <h2>Agile Manifest</h2>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Agile Manifest Principles</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <Manifesto6 />
+                                        <Manifest />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                    <Accordion>
-                        <h2>Application Lifecycle Management</h2>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Communicate Work: Plan & Track</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <CommunicateWork/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Assess Progress</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <AssessTransparency/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>SVC: File Handling</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <VersionControlPractices/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                            </Accordion>
+                        </section>
+                        <section id="alm">
+                            <Accordion>
+                                <h2>Application Lifecycle Management</h2>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Communicate Work: Plan & Track</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <CommunicateWork />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Assess Progress</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <AssessTransparency />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>SVC: File Handling</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <VersionControlPractices />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Branching Strategy</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <AgileBranching/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Communicate Work: Tasks</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <Tasks/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Continious Integration</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <ContiniousIntegration/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Branching Strategy</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <AgileBranching />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Communicate Work: Tasks</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <Tasks />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Continious Integration</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <ContiniousIntegration />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                    </Accordion>
+                            </Accordion>
+                        </section>
+                        <section id="testing">
+                            <Accordion>
+                                <h2>Testing</h2>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Unit Test FIRST</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <FIRST />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Bugs and Reporting a Bug</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <Bugs />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Unit Tests</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <UnitTests />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                    <Accordion>
-                        <h2>Testing</h2>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Unit Test FIRST</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <FIRST/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Bugs and Reporting a Bug</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <Bugs/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Unit Tests</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <UnitTests/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Unit Tests: Best Practices</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <UnitTestBestPractices />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Code Coverage</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <CodeCoverage />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>ATDD</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <ATDD />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>TDD</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <TDD />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Type of Tests</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <TypesOfTests />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Development Tests and Practices</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <TestPractices />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                            </Accordion>
+                        </section>
+                        <section id="quality">
+                            <Accordion>
+                                <h2>Quality Code</h2>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>SOLID</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <Solid />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Unit Tests: Best Practices</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <UnitTestBestPractices/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Code Coverage</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <CodeCoverage/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>ATDD</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <ATDD/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>TDD</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <TDD/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Type of Tests</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <TypesOfTests/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Development Tests and Practices</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <TestPractices/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                    </Accordion>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Quality</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <Quality />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                    <Accordion>
-                        <h2>Quality Code</h2>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>SOLID</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <Solid/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Technical Debt</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <TechnicalDebt />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Quality</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <Quality/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Quality Code = Quality Software</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <QualityCodeQualitySoftware />
+                                    </AccordionItemBody>
+                                </AccordionItem>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Technical Debt</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <TechnicalDebt/>
-                            </AccordionItemBody>
-                        </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Commit Standards</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <CommitStandards />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Coding vs. Developing</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <CodingVsDeveloping />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                            </Accordion>
+                        </section>
 
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Quality Code = Quality Software</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <QualityCodeQualitySoftware/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Commit Standards</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <CommitStandards/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                        <AccordionItem>
-                            <AccordionItemTitle>
-                                <h3>Coding vs. Developing</h3>
-                            </AccordionItemTitle>
-                            <AccordionItemBody>
-                                <CodingVsDeveloping/>
-                            </AccordionItemBody>
-                        </AccordionItem>
-                    </Accordion>
-
-
-                </div>
-
-            </div>
+                    </div>
+                </body>
+            </html>
 
         );
 
