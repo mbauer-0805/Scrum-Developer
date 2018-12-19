@@ -24,6 +24,7 @@ import poor_bug_report from "./huoLongRes/poor-bug-report.jpg";
 import high_quality_bug_report from "./huoLongRes/high-quality-bug-report.jpg";
 import bugreport from "./huoLongRes/bug-report.jpg";
 import tdd from "./huoLongRes/TDD.jpg";
+import unittest from "./huoLongRes/UnitTest.png";  
 
 class HuoLongComponent extends Component {
 
@@ -407,6 +408,21 @@ class HuoLongComponent extends Component {
                         </li>
                     </ul>
                 </div>
+                
+ <div className="contentleft">
+                        <h2 className="berlinercontent">Unit Tests</h2>
+                        <ul>
+                            <li>sehr h&auml;ufige Ausf&uuml;hrung zur Qualit&auml;tssicherung angestrebt.</li>
+                            <li>vollst&auml;ndig automatisierte Tests vorliegend.</li>
+                            <li>in TDD mehr zur Designsteuerung, als zur Defektfindung.</li>
+                            <li>sie bilden wichtige Voraussetzung beim Refactoring, um versehentliche &Auml;nderungen aufzudecken.</li>
+                            <li>Sicherstellung, dass neue Features bestehende Funktionen nicht bricken.</li>
+                            <li>Helfen bei der Dokumentation des Systems.</li>
+                            <li>von Kent Beck</li>
+				<img src={unittest} className="CustomComponent-Img" alt="logo" /><br />
+
+                        </ul>
+                    </div>
             </div>
         );
     }
