@@ -20,6 +20,14 @@ import TypesOfTests from './berlinerComponents/TypesOfTests';
 import CodeCoverage from './berlinerComponents/CodeCoverage';
 import TestPractices from './berlinerComponents/TestPractices';
 import ATDD from './berlinerComponents/ATDD';
+import QualityCodeQualitySoftware from './berlinerComponents/QualityCodeQualitySoftware';
+import 'react-accessible-accordion/dist/fancy-example.css';
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemTitle,
+    AccordionItemBody,
+} from 'react-accessible-accordion';
 
 import Solid from './berlinerComponents/Solid.js';
 
@@ -54,6 +62,27 @@ class BerlinerComponent extends Component {
                 <TestPractices />
                 <ATDD />
                 <Solid />
+                <QualityCodeQualitySoftware />
+
+                <Accordion>
+                    <AccordionItem>
+                        <AccordionItemTitle>
+                            <h3>Simple title</h3>
+                        </AccordionItemTitle>
+                        <AccordionItemBody>
+                            <p>Body content</p>
+                        </AccordionItemBody>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <AccordionItemTitle>
+                            <h3>Complex title</h3>
+                            <div>With a bit of description</div>
+                        </AccordionItemTitle>
+                        <AccordionItemBody>
+                            <p>Body content</p>
+                        </AccordionItemBody>
+                    </AccordionItem>
+                </Accordion>
             </div>
 
 
