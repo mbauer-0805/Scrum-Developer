@@ -12,6 +12,7 @@ import storypoints from "./berlinerRes/Estimating.jpg";
 import Transboard from "./berlinerRes/Transboard.jpg";
 import Transparency from "./berlinerRes/Transparency.jpg";
 import Pizza from "./berlinerRes/pizzad.png";
+import coverage from "./berlinerRes/coverage.png";
 import agileBranchingGrafik from "./berlinerRes/agileBranching.jpg";
 import burndown from './berlinerRes/burdown.png';
 
@@ -28,7 +29,7 @@ class BerlinerComponent extends Component {
 
                 <p className="berlinercontent">
                     <h2>Development Team</h2>
-                    <img src={devteamgrafik} width="830" alt="devteam bild" />
+                    <img src={devteamgrafik} width="800px" alt="devteam bild" />
                 </p>
 
                 <p className="berlinercontent">
@@ -230,8 +231,8 @@ class BerlinerComponent extends Component {
                 </p>
 
                 <div className="contentleft">
-                <p>Fitness criteria are metrics that measure things customers value when selecting a service again & again</p>
-                    
+                    <p>Fitness criteria are metrics that measure things customers value when selecting a service again & again</p>
+
 
                     <li>Quality</li>
                     <li>Predictability</li>
@@ -247,7 +248,7 @@ class BerlinerComponent extends Component {
                     <li> We need to offer a selection of different recipes which are tasty and popular. However, we must also deliver with speed & predictability</li>
 
                     <p>Different segments of customers want different things. If you are trying to be the best, you need to consider which segments you are targeting. It’s unlikely you are going to please everybody all of the time. In other words, you are going to need to focus on a SOME of the possible market. Considering this helps you find your niche markets. You then need to ask yourself questions about their values, such as:</p>
-<li> What will make them choose my product? What will turn them off?</li>
+                    <li> What will make them choose my product? What will turn them off?</li>
                     <li>What will make them become a repeat customer? What will scare them away forever? </li>
                     <li> What will cause them to recommend me to others? What will make them tell everyone to stay away?</li>
 
@@ -318,7 +319,25 @@ class BerlinerComponent extends Component {
                     <p>Therefore, all design decisions that are made throughout the Sprint make software architecture emerge and are embodied in the piece of working software. </p>
                     <p>There is no special moment for the design of the software architecture in Scrum. There is no "software architecture Sprint.". Making only design decisions during this type of a sprint would result in no value. Architecture in Scrum emerges, it is not created somewhere, or at some specific time. </p>
                 </div>
+
+                <p className="berlinercontent">
+                    <h2>Code Coverage</h2>
+                </p>
+
+                <div className="contentleft">
+                    <p>This measures the number of lines of source code executed during a given test suite for a program. Tools that measure code coverage normally express this metric as a percentage.</p>
+                    <p>
+                        Software with high results is less likely to contain undetected bugs stemming from coding errors
+                    </p>
+                    <p>Levels between 70 and 90 percent suggest reliable software, according to a <a href="https://gupea.ub.gu.se/bitstream/2077/38588/1/gupea_2077_38588_1.pdf">review of academic studies</a> that examined the correlation between software quality and code coverage.</p>
+                    <p>Many experts believe that while this metric is valuable, it should not be used as a target for testing or development teams. Targeting a specific percentage or range does not necessarily increase software quality and can lead to problematic testing practices.</p>
+                
+                </div>
+                <img src={coverage} width="800px" alt="productbacklog bild" />
+
             </div>
+
+
 
         );
     }
