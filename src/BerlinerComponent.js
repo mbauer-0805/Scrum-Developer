@@ -235,7 +235,7 @@ class BerlinerComponent extends Component {
 
                 <p className="berlinercontent">
                     <h2>Fit For Purpose</h2>
-                    <img src={Pizza} width="400px" alt="pizza bild"></img>
+                    <img src={Pizza} width="300px" alt="pizza bild"></img>
                 </p>
 
                 <div className="contentleft">
