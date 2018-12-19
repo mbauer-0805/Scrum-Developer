@@ -21,7 +21,7 @@ import CodeCoverage from './berlinerComponents/CodeCoverage';
 import TestPractices from './berlinerComponents/TestPractices';
 import ATDD from './berlinerComponents/ATDD';
 
-
+import Solid from './berlinerComponents/Solid.js';
 
 
 class BerlinerComponent extends Component {
@@ -53,6 +53,7 @@ class BerlinerComponent extends Component {
                 <CodeCoverage />
                 <TestPractices />
                 <ATDD />
+                <Solid />
             </div>
 
 
