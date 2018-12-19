@@ -36,10 +36,15 @@
 }
 
 
-.CustomComponent-Img-Rotate{
-    width: 50%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.CustomComponent-Img-Rotate {
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
@@ -47,11 +52,8 @@
     transform: rotate(90deg);
 }
 
-.CustomComponent-Img{
-    width: 60%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    max-width: 800px;
+.CustomComponent-Img {
+    max-width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -59,14 +61,21 @@
 }
 
 
-.berlinercontent{
+.berlinercontent {
     text-align: center;
 
 
 }
-.contentleft{
+
+.contentleft {
     text-align: left;
     padding-left: 15%;
     padding-right: 15%;
 
 }
+
+h1, h2, h3 {
+    text-align: center;
+
+}
+

@@ -8,14 +8,12 @@ class App extends Component {
     render() {
         return (
             <div>
-                
-                <BerlinerComponent/>
-                
-                < HuoLongComponent/>
-                
-               
 
-               
+                <BerlinerComponent/>
+
+                <HuoLongComponent/>
+
+
             </div>
 
         );
