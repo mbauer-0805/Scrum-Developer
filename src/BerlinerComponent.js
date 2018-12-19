@@ -17,6 +17,10 @@ import agileBranchingGrafik from "./berlinerRes/agileBranching.jpg";
 import burndown from './berlinerRes/burdown.png';
 import atddgrafik from './berlinerRes/atdd.jpg';
 
+import test1 from "./berlinerRes/test1.png";
+import test2 from "./berlinerRes/test2.png";
+import test3 from "./berlinerRes/test3.png";
+
 class BerlinerComponent extends Component {
 
 
@@ -229,6 +233,7 @@ class BerlinerComponent extends Component {
 
                 <p className="berlinercontent">
                     <h2>Fit For Purpose</h2>
+                    <img src={Pizza} width="400px" alt="pizza bild"></img>
                 </p>
 
                 <div className="contentleft">
@@ -320,6 +325,13 @@ class BerlinerComponent extends Component {
                     <p>Therefore, all design decisions that are made throughout the Sprint make software architecture emerge and are embodied in the piece of working software. </p>
                     <p>There is no special moment for the design of the software architecture in Scrum. There is no "software architecture Sprint.". Making only design decisions during this type of a sprint would result in no value. Architecture in Scrum emerges, it is not created somewhere, or at some specific time. </p>
                 </div>
+
+                <p className="berlinercontent">
+                    <h2>Types of Tests</h2>
+                    <img src={test1} width="800px" alt="test1 bild"></img>
+                    <img src={test2} width="800px" alt="test2 bild"></img>
+                    <img src={test3} width="800px" alt="test3 bild"></img>
+                </p>
 
                 <p className="berlinercontent">
                     <h2>Code Coverage</h2>
