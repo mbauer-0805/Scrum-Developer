@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import technicalDebt from "./huoLongRes/technicalDebt.png";
+import technicalDebt from "../huoLongRes/technicalDebt.png";
 
 //Designguide:
 //img classe Cutom-Component-Img
