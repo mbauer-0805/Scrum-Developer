@@ -1,8 +1,8 @@
+//Dont't Delete
 import React, {Component} from 'react';
 
 
 //Designguide:
-//h2 css klasse berliner..
 //img classe Cutom-Component-Img
 //div klasse contentLeft
 
