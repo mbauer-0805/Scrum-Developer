@@ -108,7 +108,7 @@ class App extends Component {
 
                         <section id="scrum">
                             <Accordion>
-                                <h2>Scrum</h2>
+                                <h2 >Scrum</h2>
                                 <AccordionItem>
                                     <AccordionItemTitle>
                                         <h3>Scrum Team</h3>
