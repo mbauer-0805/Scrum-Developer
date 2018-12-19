@@ -26,6 +26,8 @@ import bugreport from "./huoLongRes/bug-report.jpg";
 import tdd from "./huoLongRes/TDD.jpg";
 import unittest from "./huoLongRes/UnitTest.png";
 import meme from "./huoLongRes/meme.png";
+import jUnit from "./huoLongRes/jUnitTest.PNG";
+
 
 class HuoLongComponent extends Component {
 
@@ -364,30 +366,7 @@ class HuoLongComponent extends Component {
 
                 </div>
 
-                <div className="contentleft">
-                    <h2 className="berlinercontent">Test Driven Development (TDD)</h2>
-                    <ul>
-                        <li>building and executing tests before coding</li>
-                        <li>part of "test-first" approach</li>
-                    </ul>
-
-                    <img src={tdd} className="CustomComponent-Img" alt="logo"/><br/>
-                    <ol>
-                        <li> Write the test first.</li>
-                        <li>Run the test and watch it fail.</li>
-                        <li> Write just the amount of code needed to pass the test.</li>
-                        <li> Continue implementing new code until all tests pass.</li>
-                        <li> Refactor.</li>
-                    </ol>
-
-                    <h3>Advantages of TDD</h3>
-                    <ul>
-                        <li> better quality, lower error</li>
-                        <li> Improved coding efficiency</li>
-                        <li> Early detection and correction</li>
-                        <li> Cost optimazation</li>
-                    </ul>
-                </div>
+                
                 <div className="contentleft">
                     <h2 className="berlinercontent">Unit Tests</h2>
                     <ul>
@@ -426,6 +405,51 @@ class HuoLongComponent extends Component {
                     </ul>
                     <img src={meme} className="CustomComponent-Img" alt="logo"/><br/>
 
+                </div>
+                <div className="contentleft">
+                    <h2 className="berlinercontent">Best practices for unit test</h2>
+
+                    <ul>
+                        <li>Naming your tests: explicitly express the intent</li>
+                        <li>method name</li>
+                        <li>scenario</li>
+                        <li>expected behavior</li>
+                        <li>Arrange your tests</li>
+                        <li>Arrange: create, setting up</li>
+                        <li>Act&nbsp;</li>
+                        <li>Assert: expected behavior?</li>
+                        <li>Input used in test should be simplest possible</li>
+                        <li>Avoid logic in tests: no if, for, switch...</li>
+                        <li>Helper methods to setup and teardown</li>
+                        <li>Avoid multiple asserts: create a separate test for each assert</li>
+                        <li>Validate private methods by unit testing public methods</li>
+                    </ul>
+                    <img src={jUnit} className="CustomComponent-Img" alt="logo"/><br/>
+
+                </div>
+                <div className="contentleft">
+                    <h2 className="berlinercontent">Test Driven Development (TDD)</h2>
+                    <ul>
+                        <li>building and executing tests before coding</li>
+                        <li>part of "test-first" approach</li>
+                    </ul>
+
+                    <img src={tdd} className="CustomComponent-Img" alt="logo"/><br/>
+                    <ol>
+                        <li> Write the test first.</li>
+                        <li>Run the test and watch it fail.</li>
+                        <li> Write just the amount of code needed to pass the test.</li>
+                        <li> Continue implementing new code until all tests pass.</li>
+                        <li> Refactor.</li>
+                    </ol>
+
+                    <h3>Advantages of TDD</h3>
+                    <ul>
+                        <li> better quality, lower error</li>
+                        <li> Improved coding efficiency</li>
+                        <li> Early detection and correction</li>
+                        <li> Cost optimazation</li>
+                    </ul>
                 </div>
             </div>
         );
