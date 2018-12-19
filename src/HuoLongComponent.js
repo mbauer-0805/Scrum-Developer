@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import team from "./huoLongRes/scrumTeam.jpg";
 import manifest from "./huoLongRes/Manifesto 1-6.JPG";
 import master from "./huoLongRes/scrumMaster.jpg";
@@ -24,7 +24,8 @@ import poor_bug_report from "./huoLongRes/poor-bug-report.jpg";
 import high_quality_bug_report from "./huoLongRes/high-quality-bug-report.jpg";
 import bugreport from "./huoLongRes/bug-report.jpg";
 import tdd from "./huoLongRes/TDD.jpg";
-import unittest from "./huoLongRes/UnitTest.png";  
+import unittest from "./huoLongRes/UnitTest.png";
+import meme from "./huoLongRes/meme.png";
 
 class HuoLongComponent extends Component {
 
@@ -36,7 +37,7 @@ class HuoLongComponent extends Component {
                     <div>
                         <h1>Scrum Team</h1>
 
-                        <img src={team} className="Team" alt="logo" />
+                        <img src={team} className="Team" alt="logo"/>
                         <div className="contentleft">
                             <p>&nbsp;</p>
                             <p>self-organizing : not directed by anyone outside&nbsp; the team</p>
@@ -54,7 +55,7 @@ class HuoLongComponent extends Component {
                         </div>
                     </div>
                     <h1>Scrum Master</h1>
-                    <img src={master} className="App-logo" alt="logo" />
+                    <img src={master} className="App-logo" alt="logo"/>
 
                     <p>&nbsp;</p>
                     <div className="contentleft">
@@ -102,10 +103,10 @@ class HuoLongComponent extends Component {
                         </ul>
                     </div>
                     <h2>Manifesto 1-6</h2>
-                    <img src={manifest} className="CustomComponent-Img-Rotate" alt="" />
+                    <img src={manifest} className="CustomComponent-Img-Rotate" alt=""/>
 
                     <h2>Scrum Backlog</h2>
-                    <img src={sBacklog} className="CustomComponent-Img-Rotate" alt="" />
+                    <img src={sBacklog} className="CustomComponent-Img-Rotate" alt=""/>
 
                     <h2>Spring Review</h2>
                     <div className="contentleft">
@@ -134,7 +135,7 @@ class HuoLongComponent extends Component {
                             <li>a revised Product Backlog that defines the probable items for next Sprint</li>
                         </ul>
                     </div>
-                    <img src={reviewMeeting} alt="logo" />
+                    <img src={reviewMeeting} alt="logo"/>
 
                     <h2>Daily Scrum</h2>
                     <div className="contentleft">
@@ -147,23 +148,23 @@ class HuoLongComponent extends Component {
                             <li>&Uuml;berpr&uuml;fung und Anpassung</li>
                         </ul>
                     </div>
-                    <img src={review} alt="logo" />
+                    <img src={review} alt="logo"/>
                     <div className="contentleft">
                         <h3>Increment</h3>
                         <p>The Increment is the sum of all the Product Backlog items completed during a Sprint and
-                            the<br />value
+                            the<br/>value
                             of the increments of all previous Sprints. At the end of a Sprint, the new Increment
-                            must<br />be &ldquo;Done,&rdquo; which means it must be in useable condition and meet the
+                            must<br/>be &ldquo;Done,&rdquo; which means it must be in useable condition and meet the
                             Scrum
-                            Team&rsquo;s definition<br />of &ldquo;Done.&rdquo; An increment is a body of inspectable,
+                            Team&rsquo;s definition<br/>of &ldquo;Done.&rdquo; An increment is a body of inspectable,
                             done
-                            work that supports empiricism at the<br />end of the Sprint. The increment is a step toward a
-                            vision or goal. The increment must be in<br />useable condition regardless of whether the
+                            work that supports empiricism at the<br/>end of the Sprint. The increment is a step toward a
+                            vision or goal. The increment must be in<br/>useable condition regardless of whether the
                             Product
                             Owner decides to release it.</p>
 
                     </div>
-                    <img src={increment} className="CustomComponent-Img" alt="logo" />
+                    <img src={increment} className="CustomComponent-Img" alt="logo"/>
                     <h2>User Stories</h2>
                     <div className="contentleft">
                         <ul>
@@ -186,7 +187,7 @@ class HuoLongComponent extends Component {
                         </ul>
                         <h3>Epic, User Story und Task</h3>
                     </div>
-                    <img src={epic} className="CustomComponent-Img" alt="logo" />
+                    <img src={epic} className="CustomComponent-Img" alt="logo"/>
                     <div className="contentleft">
                         <ul>
                             <li>Epic: H&ouml;chste Abstraktionsstufe, zu gro&szlig; f&uuml;r einen Sprint.</li>
@@ -219,7 +220,7 @@ class HuoLongComponent extends Component {
                         </ul>
                     </div>
                     <h3>Story-Card</h3>
-                    <img src={storyCard} className="CustomComponent-Img" alt="logo" />
+                    <img src={storyCard} className="CustomComponent-Img" alt="logo"/>
 
                     <h2>Ideal Day</h2>
                     <div className="contentleft">
@@ -234,14 +235,14 @@ class HuoLongComponent extends Component {
                             <li>each member estimates how many ideal days he need to finish the user story</li>
                         </ul>
                     </div>
-                    <img src={idealDay} className="CustomComponent-Img" alt="logo" />
+                    <img src={idealDay} className="CustomComponent-Img" alt="logo"/>
 
                     <h2>Continious Integration</h2>
-                    <img src={contIntegration} className="CustomComponent-Img" alt="logo" /><br />
-                    <img src={contIntegrationBrands} className="CustomComponent-Img" alt="logo" />
+                    <img src={contIntegration} className="CustomComponent-Img" alt="logo"/><br/>
+                    <img src={contIntegrationBrands} className="CustomComponent-Img" alt="logo"/>
 
                     <h2>Sprint Planning</h2>
-                    <img src={sprintPlanning} className="CustomComponent-Img" alt="logo" />
+                    <img src={sprintPlanning} className="CustomComponent-Img" alt="logo"/>
                     <div className="contentleft">
                         <p>Who?</p>
                         <ul>
@@ -269,9 +270,9 @@ class HuoLongComponent extends Component {
                         </ul>
 
                         <h2>Branching vs. Merging</h2>
-                        <img src={branchMerch1} className="CustomComponent-Img" alt="logo" /><br />
-                        <img src={branchMerch2} className="CustomComponent-Img" alt="logo" /><br />
-                        <img src={branchMerch3} className="CustomComponent-Img" alt="logo" /><br />
+                        <img src={branchMerch1} className="CustomComponent-Img" alt="logo"/><br/>
+                        <img src={branchMerch2} className="CustomComponent-Img" alt="logo"/><br/>
+                        <img src={branchMerch3} className="CustomComponent-Img" alt="logo"/><br/>
                     </div>
 
                 </div>
@@ -289,7 +290,7 @@ class HuoLongComponent extends Component {
                     </ul>
                     <h3>Alternative&nbsp;</h3>
                     <p>Emergent Design</p>
-                    <img src={bduf} className="CustomComponent-Img" alt="logo" />
+                    <img src={bduf} className="CustomComponent-Img" alt="logo"/>
                 </div>
                 <div className="contentleft">
                     <h2>Emergent Architecture</h2>
@@ -309,7 +310,7 @@ class HuoLongComponent extends Component {
                             high-ordered requirements
                         </li>
                     </ul>
-                    <img src={emergArch} className="CustomComponent-Img" alt="logo" />
+                    <img src={emergArch} className="CustomComponent-Img" alt="logo"/>
                 </div>
                 <div className="contentleft">
                     <h2 className="berlinercontent">Communicate Work: Tasks</h2>
@@ -322,7 +323,7 @@ class HuoLongComponent extends Component {
                         <li>completed by one person on the team.</li>
                         <li>shouldn'ttake more than a day</li>
                     </ul>
-                    <img src={tasks} className="CustomComponent-Img" alt="logo" />
+                    <img src={tasks} className="CustomComponent-Img" alt="logo"/>
                 </div>
                 <div className="contentleft">
                     <h2 className="berlinercontent">Bugs</h2>
@@ -336,8 +337,8 @@ class HuoLongComponent extends Component {
                         <li>Nicht wichtige Bugs vergessen</li>
                         <li>Kritische Bugs sofort behandeln</li>
                     </ul>
-                    <img src={bug1} className="CustomComponent-Img" alt="logo" />
-                    <img src={bug2} className="CustomComponent-Img" alt="logo" />
+                    <img src={bug1} className="CustomComponent-Img" alt="logo"/>
+                    <img src={bug2} className="CustomComponent-Img" alt="logo"/>
                 </div>
                 <div className="contentleft">
                     <h2 className="berlinercontent">Reporting a Bug</h2>
@@ -354,75 +355,78 @@ class HuoLongComponent extends Component {
                         <li>A good bug report establishes a common ground for collaboration</li>
                     </ul>
                     <h3 className="berlinercontent">Way of a Bug Report</h3>
-                    <img src={bugreport} className="CustomComponent-Img" alt="logo" />
+                    <img src={bugreport} className="CustomComponent-Img" alt="logo"/>
                     <h3 className="berlinercontent">Poor Bug Report</h3>
-                    <img src={poor_bug_report} className="CustomComponent-Img" alt="logo" /><br />
+                    <img src={poor_bug_report} className="CustomComponent-Img" alt="logo"/><br/>
                     <h3 className="berlinercontent">High Quality Bug Report</h3>
-                    <img src={high_quality_bug_report} className="CustomComponent-Img" alt="logo" /><br />
+                    <img src={high_quality_bug_report} className="CustomComponent-Img" alt="logo"/><br/>
 
 
                 </div>
-                <div className="contentLeft">
+
+                <div className="contentleft">
                     <h2 className="berlinercontent">Test Driven Development (TDD)</h2>
                     <ul>
-                        <li>
-                            building and executing tests before coding
-                        </li>
-                        <li>
-                            part of "test-first" approach
-                        </li>
+                        <li>building and executing tests before coding</li>
+                        <li>part of "test-first" approach</li>
                     </ul>
 
-                    <img src={tdd} className="CustomComponent-Img" alt="logo" /><br />
+                    <img src={tdd} className="CustomComponent-Img" alt="logo"/><br/>
                     <ol>
-                        <li>
-                            Write the test first.
-                        </li>
-                        <li>
-                            Run the test and watch it fail.
-                        </li>
-                        <li>
-                            Write just the amount of code needed to pass the test.
-                        </li>
-                        <li>
-                            Continue implementing new code until all tests pass.
-                        </li>
-                        <li>
-                            Refactor.
-                        </li>
+                        <li> Write the test first.</li>
+                        <li>Run the test and watch it fail.</li>
+                        <li> Write just the amount of code needed to pass the test.</li>
+                        <li> Continue implementing new code until all tests pass.</li>
+                        <li> Refactor.</li>
                     </ol>
-                    
+
                     <h3>Advantages of TDD</h3>
                     <ul>
-                        <li>
-                            better quality, lower error
-                        </li>
-                        <li>
-                            Improved coding efficiency
-                        </li>
-                        <li>
-                            Early detection and correction
-                        </li>
-                        <li>
-                            Cost optimazation
-                        </li>
+                        <li> better quality, lower error</li>
+                        <li> Improved coding efficiency</li>
+                        <li> Early detection and correction</li>
+                        <li> Cost optimazation</li>
                     </ul>
                 </div>
-                
- <div className="contentleft">
-                        <h2 className="berlinercontent">Unit Tests</h2>
-                        <ul>
-                            <li>sehr h&auml;ufige Ausf&uuml;hrung zur Qualit&auml;tssicherung angestrebt.</li>
-                            <li>vollst&auml;ndig automatisierte Tests vorliegend.</li>
-                            <li>in TDD mehr zur Designsteuerung, als zur Defektfindung.</li>
-                            <li>sie bilden wichtige Voraussetzung beim Refactoring, um versehentliche &Auml;nderungen aufzudecken.</li>
-                            <li>Sicherstellung, dass neue Features bestehende Funktionen nicht bricken.</li>
-                            <li>Helfen bei der Dokumentation des Systems.</li>
-                            <li>von Kent Beck</li>
-				<img src={unittest} className="CustomComponent-Img" alt="logo" /><br />
+                <div className="contentleft">
+                    <h2 className="berlinercontent">Unit Tests</h2>
+                    <ul>
+                        <li>sehr h&auml;ufige Ausf&uuml;hrung zur Qualit&auml;tssicherung angestrebt.</li>
+                        <li>vollst&auml;ndig automatisierte Tests vorliegend.</li>
+                        <li>in TDD mehr zur Designsteuerung, als zur Defektfindung.</li>
+                        <li>sie bilden wichtige Voraussetzung beim Refactoring, um versehentliche &Auml;nderungen
+                            aufzudecken.
+                        </li>
+                        <li>Sicherstellung, dass neue Features bestehende Funktionen nicht bricken.</li>
+                        <li>Helfen bei der Dokumentation des Systems.</li>
+                        <li>von Kent Beck</li>
+                        <img src={unittest} className="CustomComponent-Img" alt="logo"/><br/>
 
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
+                <div className="contentleft">
+                    <h2 className="berlinercontent">F.I.R.S.T</h2>
+                    <ul>
+                        <li><strong>Fast</strong>. It is not uncommon for mature projects to have thousands of unit
+                            tests. Unit tests should take very little time to run. Milliseconds.
+                        </li>
+                        <li className=""><strong>Isolated</strong>. Unit tests are standalone, can be run in isolation,
+                            and have no dependencies on any outside factors such as a file system or database.
+                        </li>
+                        <li><strong>Repeatable</strong>. Running a unit test should be consistent with its results, that
+                            is, it always returns the same result if you do not change anything in between runs.
+                        </li>
+                        <li><strong>Self-Checking</strong>. The test should be able to automatically detect if it passed
+                            or failed without any human interaction.
+                        </li>
+                        <li className=""><strong>Timely</strong>. A unit test should not take a disproportionally long
+                            time to write compared to the code being tested. If you find testing the code taking a large
+                            amount of time compared to writing the code, consider a design that is more testable.
+                        </li>
+                    </ul>
+                    <img src={meme} className="CustomComponent-Img" alt="logo"/><br/>
+
+                </div>
             </div>
         );
     }
