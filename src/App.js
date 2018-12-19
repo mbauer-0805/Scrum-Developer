@@ -63,6 +63,7 @@ import CodingVsDeveloping from "./huolongComponents/CodingVsDeveloping";
 
 import './vendor/bootstrap/css/bootstrap.min.css'
 import './css/scrolling-nav.css'
+import BuildAutomation from './huolongComponents/BuildAutomation';
 
 class App extends Component {
     render() {
@@ -505,6 +506,14 @@ class App extends Component {
                                     </AccordionItemTitle>
                                     <AccordionItemBody>
                                         <CodingVsDeveloping />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Build Automation</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <BuildAutomation />
                                     </AccordionItemBody>
                                 </AccordionItem>
                                 <AccordionItem>
