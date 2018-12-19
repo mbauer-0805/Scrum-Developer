@@ -19,6 +19,7 @@ import UnitTestBestPractices from "./huolongComponents/UnitTestBestPractices";
 import UnitTests from "./huolongComponents/UnitTests";
 import UserStories from "./huolongComponents/UserStories";
 import TechnicalDebt from './huolongComponents/TechnicalDebt';
+import Quality from './huolongComponents/Quality';
 
 class HuoLongComponent extends Component {
 
@@ -45,6 +46,7 @@ class HuoLongComponent extends Component {
                 <UnitTests/>
                 <UserStories/>
                 <TechnicalDebt/>
+                <Quality/>
 
 
             </div>
