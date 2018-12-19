@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './HuoLong.css';
 import berlingrafik from "./berlinerRes/berlin.png";
 import logo from "./huoLongRes/huoLong.png";
@@ -55,7 +55,7 @@ import {
     AccordionItemTitle,
     AccordionItemBody,
 } from 'react-accessible-accordion';
-
+import CodingVsDeveloping from "./huolongComponents/CodingVsDeveloping";
 
 
 class App extends Component {
@@ -64,8 +64,8 @@ class App extends Component {
             <div>
                 <div className="App">
                     <header className="App-header">
-                        <img src={berlingrafik} className="Team" alt="logo" />
-                        <img src={logo} className="Team" alt="logo" />
+                        <img src={berlingrafik} className="Team" alt="logo"/>
+                        <img src={logo} className="Team" alt="logo"/>
                     </header>
                     <Accordion>
                         <h2>Scrum</h2>
@@ -74,7 +74,7 @@ class App extends Component {
                                 <h3>Scrum Team</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <ScrumTeam />
+                                <ScrumTeam/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -83,7 +83,7 @@ class App extends Component {
                                 <h3>Development Team</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <DevelopmentTeam />
+                                <DevelopmentTeam/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -92,7 +92,7 @@ class App extends Component {
                                 <h3>Product Owner</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <ProductOwner />
+                                <ProductOwner/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -101,7 +101,7 @@ class App extends Component {
                                 <h3>Scrum Master</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <ScrumMaster />
+                                <ScrumMaster/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -109,7 +109,7 @@ class App extends Component {
                                 <h3>Product Backlog</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <ProductBacklog />
+                                <ProductBacklog/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -117,7 +117,7 @@ class App extends Component {
                                 <h3>Increment</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <Increment />
+                                <Increment/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -125,7 +125,7 @@ class App extends Component {
                                 <h3>Review Meeting</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <ReviewMeeting />
+                                <ReviewMeeting/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -133,7 +133,7 @@ class App extends Component {
                                 <h3>Retrospecive Meeting</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <SprintRetro />
+                                <SprintRetro/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -141,7 +141,7 @@ class App extends Component {
                                 <h3>Sprint</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <TheSprint />
+                                <TheSprint/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -150,7 +150,7 @@ class App extends Component {
                                 <h3>Sprint Planning</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <SprintPlanning />
+                                <SprintPlanning/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -158,7 +158,7 @@ class App extends Component {
                                 <h3>Sprint Review</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <SprintReview />
+                                <SprintReview/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -166,7 +166,7 @@ class App extends Component {
                                 <h3>Scrum Backlog</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <ScrumBacklog />
+                                <ScrumBacklog/>
                             </AccordionItemBody>
                         </AccordionItem>
                     </Accordion>
@@ -178,7 +178,7 @@ class App extends Component {
                                 <h3>PBI</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <ProductBacklogItems />
+                                <ProductBacklogItems/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -186,7 +186,7 @@ class App extends Component {
                                 <h3>Ideal Day</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <IdealDay />
+                                <IdealDay/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -194,7 +194,7 @@ class App extends Component {
                                 <h3>User Stories</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <UserStories />
+                                <UserStories/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -203,7 +203,7 @@ class App extends Component {
                                 <h3>Story Points</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <StoryPoints />
+                                <StoryPoints/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -211,7 +211,7 @@ class App extends Component {
                                 <h3>Definition of Done</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <DefinitionOfDone />
+                                <DefinitionOfDone/>
                             </AccordionItemBody>
                         </AccordionItem>
                     </Accordion>
@@ -223,7 +223,7 @@ class App extends Component {
                                 <h3>Emerging Architecture</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <EmergentArchitecture />
+                                <EmergentArchitecture/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -232,7 +232,7 @@ class App extends Component {
                                 <h3>Architecture has no value</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <ArchitectureNoValue />
+                                <ArchitectureNoValue/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -241,7 +241,7 @@ class App extends Component {
                                 <h3>Fit for Purpose</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <FitForPurpose />
+                                <FitForPurpose/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -250,7 +250,7 @@ class App extends Component {
                                 <h3>BDUF</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <BDUF />
+                                <BDUF/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -264,8 +264,8 @@ class App extends Component {
                                 <h3>Agile Manifest Principles</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <Manifesto6 />
-                                <Manifest />
+                                <Manifesto6/>
+                                <Manifest/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -278,7 +278,7 @@ class App extends Component {
                                 <h3>Communicate Work: Plan & Track</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <CommunicateWork />
+                                <CommunicateWork/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -286,7 +286,7 @@ class App extends Component {
                                 <h3>Assess Progress</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <AssessTransparency />
+                                <AssessTransparency/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -294,7 +294,7 @@ class App extends Component {
                                 <h3>SVC: File Handling</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <VersionControlPractices />
+                                <VersionControlPractices/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -303,7 +303,7 @@ class App extends Component {
                                 <h3>Branching Strategy</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <AgileBranching />
+                                <AgileBranching/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -311,7 +311,7 @@ class App extends Component {
                                 <h3>Communicate Work: Tasks</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <Tasks />
+                                <Tasks/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -319,7 +319,7 @@ class App extends Component {
                                 <h3>Continious Integration</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <ContiniousIntegration />
+                                <ContiniousIntegration/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -332,7 +332,7 @@ class App extends Component {
                                 <h3>Unit Test FIRST</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <FIRST />
+                                <FIRST/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -340,7 +340,7 @@ class App extends Component {
                                 <h3>Bugs and Reporting a Bug</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <Bugs />
+                                <Bugs/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -348,7 +348,7 @@ class App extends Component {
                                 <h3>Unit Tests</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <UnitTests />
+                                <UnitTests/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -357,7 +357,7 @@ class App extends Component {
                                 <h3>Unit Tests: Best Practices</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <UnitTestBestPractices />
+                                <UnitTestBestPractices/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -365,7 +365,7 @@ class App extends Component {
                                 <h3>Code Coverage</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <CodeCoverage />
+                                <CodeCoverage/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -373,7 +373,7 @@ class App extends Component {
                                 <h3>ATDD</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <ATDD />
+                                <ATDD/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -381,7 +381,7 @@ class App extends Component {
                                 <h3>TDD</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <TDD />
+                                <TDD/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -389,7 +389,7 @@ class App extends Component {
                                 <h3>Type of Tests</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <TypesOfTests />
+                                <TypesOfTests/>
                             </AccordionItemBody>
                         </AccordionItem>
                         <AccordionItem>
@@ -397,18 +397,19 @@ class App extends Component {
                                 <h3>Development Tests and Practices</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <TestPractices />
+                                <TestPractices/>
                             </AccordionItemBody>
                         </AccordionItem>
                     </Accordion>
 
                     <Accordion>
-                    <AccordionItem>
+                        <h2>Quality Code</h2>
+                        <AccordionItem>
                             <AccordionItemTitle>
                                 <h3>SOLID</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <Solid />
+                                <Solid/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -417,7 +418,7 @@ class App extends Component {
                                 <h3>Quality</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <Quality />
+                                <Quality/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -426,7 +427,7 @@ class App extends Component {
                                 <h3>Technical Debt</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <TechnicalDebt />
+                                <TechnicalDebt/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -435,7 +436,7 @@ class App extends Component {
                                 <h3>Quality Code = Quality Software</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <QualityCodeQualitySoftware />
+                                <QualityCodeQualitySoftware/>
                             </AccordionItemBody>
                         </AccordionItem>
 
@@ -444,7 +445,15 @@ class App extends Component {
                                 <h3>Commit Standards</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <CommitStandards />
+                                <CommitStandards/>
+                            </AccordionItemBody>
+                        </AccordionItem>
+                        <AccordionItem>
+                            <AccordionItemTitle>
+                                <h3>Coding vs. Developing</h3>
+                            </AccordionItemTitle>
+                            <AccordionItemBody>
+                                <CodingVsDeveloping/>
                             </AccordionItemBody>
                         </AccordionItem>
                     </Accordion>
