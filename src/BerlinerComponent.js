@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import berlingrafik from "./berlinerRes/berlin.png";
 import logo from "./huoLongRes/huoLong.png";
-import devteamgrafik from "./berlinerRes/devTeam.png";
-import productownergrafik from "./berlinerRes/productOwner.png";
-import manifestografik from "./berlinerRes/manifesto.jpg";
-import productBackloggrafik from "./berlinerRes/productBacklog.jpg";
-import definitionofdone from "./berlinerRes/definitionOfDone.jpg";
-import retrospectivegrafik from "./berlinerRes/SprintRetro.png";
-import csgrafik from "./berlinerRes/cs.png";
+import DevelopmentTeam from "./berlinerComponents/DevelopmentTeam.js";
+import ProductOwner from "./berlinerComponents/ProductOwner.js";
+import Manifest from "./berlinerComponents/Manifest.js";
+import ProductBacklog from "./berlinerComponents/ProductBacklog.js";
+import DefinitionOfDone from "./berlinerComponents/DefinitionOfDone.js";
+import SprintRetro from "./berlinerComponents/SprintRetro.js";
+import TheSprint from "./berlinerComponents/TheSprint.js";
+import ProductBacklogItems from "./berlinerComponents/ProductBacklogItems.js";
+
+
 import storypoints from "./berlinerRes/Estimating.jpg";
 
 import coverage from "./berlinerRes/coverage.png";
@@ -34,122 +37,16 @@ class BerlinerComponent extends Component {
                     <img src={logo} className="Team" alt="logo" />
                 </header>
 
-                <p className="berlinercontent">
-                    <h2>Development Team</h2>
-                    <img src={devteamgrafik} width="800px" alt="devteam bild" />
-                </p>
-
-                <p className="berlinercontent">
-                    <h2>Product Owner</h2>
-                    <img src={productownergrafik} alt="productowner bild" />
-                </p>
-
-                <p className="berlinercontent">
-                    <h2>Manifest 7 - 12</h2>
-                    <img src={manifestografik} alt="manifesto bild" />
-
-                </p>
-
-                <p className="berlinercontent">
-                    <h2>Artifact: Product-Backlog</h2>
-                    <img src={productBackloggrafik} alt="productbacklog bild" />
-                </p>
-
-                <div className="contentleft">
-                    <h2 className="berlinercontent">Product Backlog</h2>
-                    <ul>
-                        <li>Single source of requirements for any changes to be made to the product</li>
-                        <li>The Product Owner is responsible including its content, availability, and ordering</li>
-                        <li>is never complete, it is dynamic -> living artifact</li>
-                        <li>earliest development of it: initially known and best-understood requirements</li>
-                        <li>If a product exists, its Product Backlog also exists</li>
-                        <li>lists all features, functions, requirements, enhancements, and fixes that constitute the
-                            changes to be made to the product in future releases
-                        </li>
-                        <li>Product Backlog items have the attributes: description, order, estimate, and value. Product
-                            Backlog items often include test descriptions that will prove its completeness when "Done"
-                        </li>
-                        <li>Product Backlog refinement: act of adding detail, estimates, and order to items in the
-                            Product Backlog (ongoing process in which the Product Owner and the Development Team
-                            collaborate on the details of Product Backlog items)
-                        </li>
-                        <li>Refinement usually consumes no more than 10% of the capacity of the Development Team</li>
-                        <li>Product Backlog items can be updated at any time by the Product Owner or at the Product
-                            Owner’s discretion
-                        </li>
-                        <li>Higher ordered Product Backlog items are usually clearer and more detailed than lower
-                            ordered ones
-                        </li>
-                        <li>Product Backlog items that can be "Done" by the Development Team within one Sprint are
-                            deemed "Ready" for selection in a Sprint Planning
-                        </li>
-                    </ul>
-                </div>
-
-                <p className="contentleft">
-                    <h2 className="berlinercontent">Definition of done</h2>
-                    The team agrees on, and displays prominently somewhere in the team room, a list of criteria which
-                    must be met before a product increment "often a user story" is considered "done". Failure to meet
-                    these criteria at the end of a sprint normally implies that the work should not be counted toward
-                    that sprint's velocity.
-                </p>
-                <p className="berlinercontent">
-                    <img src={definitionofdone} alt="definition of done" />
-                </p>
-
-                <p className="berlinercontent">
-                    <h2>Sprint Retrospective</h2>
-                    <img width="800px" src={retrospectivegrafik} alt="retrospective bild" />
-
-                </p>
-
-                <div className="contentleft">
-                    <h2 className="berlinercontent">Sprint Retrospective</h2>
-                    <p>The Sprint Retrospective occurs after the Sprint Review and prior to the next Sprint Planning.
-                        This is at most a three-hour meeting for one-month Sprints. For shorter Sprints, the event is
-                        usually shorter.
-                        During the Sprint Retrospective, the team discusses:</p>
-                    <ul>
-                        <li>What went well in the Sprint</li>
-                        <li>What could be improved</li>
-                        <li>What will we commit to improve in the next Sprint</li>
-                    </ul>
-                </div>
+                <DevelopmentTeam />
+                <ProductOwner />
+                <Manifest />
+                <ProductBacklog />
+                <DefinitionOfDone />
+                <SprintRetro />
+                <TheSprint />
+                <ProductBacklogItems />
 
 
-                <p className="berlinercontent">
-                    <h2>The Sprint</h2>
-                </p>
-
-                <div className="contentleft">
-                    <p>
-                        As described in the Scrum Guide, a Sprint, a time-box of one month or less during which a
-                        “Done”, useable, and Scrum Sprint is part of the Empirical Processpotentially releasable product
-                        Increment is created. Sprints have consistent durations throughout a development effort. A new
-                        Sprint starts immediately after the conclusion of the previous Sprint.
-                    </p>
-                    <p>
-                        <ul>
-                            <li>No changes are made that would endanger the Sprint Goal</li>
-                            <li>Quality goals do not decrease</li>
-                            <li>Scope may be clarified and re-negotiated between the Product Owner and Development Team
-                                as more is learned.
-                            </li>
-                        </ul>
-                    </p>
-                    <p>
-                        Each Sprint may be considered a project with no more than a one-month horizon. Like projects,
-                        Sprints are used to accomplish something. Each Sprint has a goal of what is to be built, a
-                        design and flexible plan that will guide building it, the work, and the resultant product
-                        increment.
-                    </p>
-                </div>
-
-                <p className="berlinercontent">
-                    <h2>Product Backlog Items and 3Cs</h2>
-                    <img src={csgrafik} alt="three cs bild" />
-
-                </p>
 
                 <p className="berlinercontent">
                     <h2>Story Points</h2>
@@ -333,8 +230,8 @@ class BerlinerComponent extends Component {
 
                     <p> <img src={test0} width="400px" alt="test0 bild"></img>  </p>
                     <p><img src={test1} width="400px" alt="test1 bild"></img> </p>
-                    <p> <img src={test2} width="400px" alt="test2 bild"></img></p> 
-                    <p> <img src={test3} width="400px" alt="test3 bild"></img></p> 
+                    <p> <img src={test2} width="400px" alt="test2 bild"></img></p>
+                    <p> <img src={test3} width="400px" alt="test3 bild"></img></p>
                 </p>
 
                 <p className="berlinercontent">
@@ -348,37 +245,37 @@ class BerlinerComponent extends Component {
                     </p>
                     <p>Levels between 70 and 90 percent suggest reliable software, according to a <a href="https://gupea.ub.gu.se/bitstream/2077/38588/1/gupea_2077_38588_1.pdf">review of academic studies</a> that examined the correlation between software quality and code coverage.</p>
                     <p>Many experts believe that while this metric is valuable, it should not be used as a target for testing or development teams. Targeting a specific percentage or range does not necessarily increase software quality and can lead to problematic testing practices.</p>
-                
+
                 </div>
                 <img src={coverage} width="800px" alt="productbacklog bild" />
 
 
                 <div className="contentleft">
-                <h1>ATDD - Acceptance Test-Driven Development</h1>
-                <h2>Does the system do what it is required to do?</h2>
-                <ul>
-                    <li>may also be referred to as Story Test Driven Development (SDD), Specification by Example or Behavior Driven Development (BDD)</li>
-                    <li>a collaborative practice where users, testers, and developers define automated acceptance criteria</li>
-                    <li>helps to ensure that all project members understand precisely what needs to be done and implemented</li>
-                    <li>Failing tests provide quick feedback that the requirements are not being met</li>
-                    <li>The tests are specified in business domain terms. Each feature must deliver real and measurable business value: indeed, if your feature doesn’t trace back to at least one business goal</li>
-                    <li>writing acceptance tests in advance of implementing the corresponding functionality</li>
-                    <li>acceptance tests represent the user's point of view</li>
-                    <p></p>
-                    <li>The collaborative discussions to generate the acceptance test is often referred to as the three amigos -> representing the three perspectives of customer, development team, testing</li>
+                    <h1>ATDD - Acceptance Test-Driven Development</h1>
+                    <h2>Does the system do what it is required to do?</h2>
+                    <ul>
+                        <li>may also be referred to as Story Test Driven Development (SDD), Specification by Example or Behavior Driven Development (BDD)</li>
+                        <li>a collaborative practice where users, testers, and developers define automated acceptance criteria</li>
+                        <li>helps to ensure that all project members understand precisely what needs to be done and implemented</li>
+                        <li>Failing tests provide quick feedback that the requirements are not being met</li>
+                        <li>The tests are specified in business domain terms. Each feature must deliver real and measurable business value: indeed, if your feature doesn’t trace back to at least one business goal</li>
+                        <li>writing acceptance tests in advance of implementing the corresponding functionality</li>
+                        <li>acceptance tests represent the user's point of view</li>
+                        <p></p>
+                        <li>The collaborative discussions to generate the acceptance test is often referred to as the three amigos -> representing the three perspectives of customer, development team, testing</li>
                     </ul>
                 </div>
                 <p className="berlinercontent">
                     <img src={atddgrafik} width="300px" alt="atdd bild" />
                 </p>
                 <div className="contentleft">
-                <ui>
-                    <li>what problem are we trying to solve? (customer)</li>
-                    <li>development (how might we solve this problem?)</li>
-                    <li>and testing (what about...)</li>
-                       <p></p> 
-                       <li>Even more than the use of automated acceptance tests, this practice is strongly associated with the use of specific tools such as Fit/FitNess, Cucumber or others</li>       
-                </ui>
+                    <ui>
+                        <li>what problem are we trying to solve? (customer)</li>
+                        <li>development (how might we solve this problem?)</li>
+                        <li>and testing (what about...)</li>
+                        <p></p>
+                        <li>Even more than the use of automated acceptance tests, this practice is strongly associated with the use of specific tools such as Fit/FitNess, Cucumber or others</li>
+                    </ui>
                 </div>
             </div>
 
