@@ -42,6 +42,10 @@ import TDD from "./huolongComponents/TDD";
 import UnitTestBestPractices from "./huolongComponents/UnitTestBestPractices";
 import UnitTests from "./huolongComponents/UnitTests";
 import UserStories from "./huolongComponents/UserStories";
+import CommitStandards from "./berlinerComponents/CommitStandards"
+import Quality from "./huolongComponents/Quality"
+import TechnicalDebt from "./huolongComponents/TechnicalDebt"
+
 
 import 'react-accessible-accordion/dist/fancy-example.css';
 
@@ -322,7 +326,7 @@ class App extends Component {
                     </Accordion>
 
                     <Accordion>
-                        <h2>Application Lifecycle Management</h2>
+                        <h2>Testing</h2>
                         <AccordionItem>
                             <AccordionItemTitle>
                                 <h3>Unit Test FIRST</h3>
@@ -396,6 +400,36 @@ class App extends Component {
                                 <TestPractices />
                             </AccordionItemBody>
                         </AccordionItem>
+                    </Accordion>
+
+                    <Accordion>
+                    <AccordionItem>
+                            <AccordionItemTitle>
+                                <h3>SOLID</h3>
+                            </AccordionItemTitle>
+                            <AccordionItemBody>
+                                <Solid />
+                            </AccordionItemBody>
+                        </AccordionItem>
+
+                        <AccordionItem>
+                            <AccordionItemTitle>
+                                <h3>Quality</h3>
+                            </AccordionItemTitle>
+                            <AccordionItemBody>
+                                <Quality />
+                            </AccordionItemBody>
+                        </AccordionItem>
+
+                        <AccordionItem>
+                            <AccordionItemTitle>
+                                <h3>Technical Debt</h3>
+                            </AccordionItemTitle>
+                            <AccordionItemBody>
+                                <TechnicalDebt />
+                            </AccordionItemBody>
+                        </AccordionItem>
+
                         <AccordionItem>
                             <AccordionItemTitle>
                                 <h3>Quality Code = Quality Software</h3>
@@ -404,15 +438,17 @@ class App extends Component {
                                 <QualityCodeQualitySoftware />
                             </AccordionItemBody>
                         </AccordionItem>
+
                         <AccordionItem>
                             <AccordionItemTitle>
-                                <h3>SOLID</h3>
+                                <h3>Commit Standards</h3>
                             </AccordionItemTitle>
                             <AccordionItemBody>
-                                <Solid />
+                                <CommitStandards />
                             </AccordionItemBody>
                         </AccordionItem>
                     </Accordion>
+
 
                 </div>
 
