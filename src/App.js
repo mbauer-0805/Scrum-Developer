@@ -45,6 +45,9 @@ import UserStories from "./huolongComponents/UserStories";
 import CommitStandards from "./berlinerComponents/CommitStandards"
 import Quality from "./huolongComponents/Quality"
 import TechnicalDebt from "./huolongComponents/TechnicalDebt"
+import AgileVsTradition from "./berlinerComponents/AgileVsTraditionalTesting"
+
+
 
 
 import 'react-accessible-accordion/dist/fancy-example.css';
@@ -502,6 +505,14 @@ class App extends Component {
                                     </AccordionItemTitle>
                                     <AccordionItemBody>
                                         <CodingVsDeveloping />
+                                    </AccordionItemBody>
+                                </AccordionItem>
+                                <AccordionItem>
+                                    <AccordionItemTitle>
+                                        <h3>Agile vs Traditional Testing</h3>
+                                    </AccordionItemTitle>
+                                    <AccordionItemBody>
+                                        <AgileVsTradition />
                                     </AccordionItemBody>
                                 </AccordionItem>
                             </Accordion>

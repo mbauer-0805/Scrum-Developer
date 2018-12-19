@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import '../HuoLong.css';
 import agileVsTraditiongrafik from '../berlinerRes/agileVsTradition.png';
 
-class CommitStandards extends Component {
+class AgileVsTradition extends Component {
     render() {
         return (
             
             <p className="berlinercontent">
-                    <img src={agileVsTraditiongrafik} width="300px" alt="agile vs tradition bild" />
+                    <img src={agileVsTraditiongrafik} width="700px" alt="agile vs tradition bild" />
                 </p>
 
         );
@@ -15,4 +15,4 @@ class CommitStandards extends Component {
     }
 }
 
-export default CommitStandards;
+export default AgileVsTradition;
